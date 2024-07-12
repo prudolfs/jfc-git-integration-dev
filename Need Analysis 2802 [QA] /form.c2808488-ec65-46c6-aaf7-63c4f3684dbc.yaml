@@ -1,0 +1,856 @@
+_id: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+name: "Need Analysis 2802 [QA] "
+description: ""
+rootAction: 359445d3-7398-4894-bc9e-07112d2ae57f
+shortName: ""
+components:
+  - ac4ec6db-c0b5-46ff-a2bf-195ce3c34b37
+  - d2649f3b-4c5e-4ff9-8a59-6eeb1980b169
+  - ed269e86-742e-43dc-81f1-ef49003f8099
+  - 3457c85d-3842-4a59-a16a-3619141070f7
+  - beefc349-a912-4316-a104-9f025dcd188d
+  - cd1b5821-88a8-4c67-a4c4-e42b7e28f858
+  - 91055421-5ca9-4a63-88bf-fa663e67de34
+  - 3c4e814e-c664-4273-9905-b5afcaf2f6e5
+  - c2ec0d93-f0eb-493d-ae15-48e74e11f6ab
+  - fe132fb7-2a35-4e85-8e4d-8a3a006eb63e
+unlinkedFields: []
+formSettings:
+  allowedDomains: []
+  customUrls:
+    cdn: ""
+    api: ""
+  customCss: "body{\r
+
+    \  overflow: auto  !important;\r
+
+    \  background: rgb(250, 250, 250) !important;\r
+
+    }\r
+
+    .container-centered > div {\r
+
+    \  margin: 16px 0 !important;\r
+
+    }\r
+
+    /*.ib-page{*/\r
+
+    /*  width:80% !important;*/\r
+
+    /*  max-width:80% !important;*/\r
+
+    /*  @media only screen and (max-width: 1440px) {*/\r
+
+    \  \r
+
+    /*}*/\r
+
+    /*}*/\r
+
+    \r
+
+    .MuiPaper-rounded{\r
+
+    \  padding:0px!important;\r
+
+    \  border-radius:20px!important;\r
+
+    \  max-height: fit-content !important;\r
+
+    }\r
+
+    \r
+
+    .p0 {\r
+
+    \  padding: 0rem;\r
+
+    }\r
+
+    \r
+
+    .m0 {\r
+
+    \  margin: 0rem;\r
+
+    }\r
+
+    \r
+
+    .pt0 {\r
+
+    \ padding-top: 0rem; \r
+
+    }\r
+
+    \r
+
+    .pl0 {\r
+
+    \ padding-left: 0rem; \r
+
+    }\r
+
+    \r
+
+    .genderHeader{\r
+
+    \    width: 588px;\r
+
+    /*height: 40px;*/\r
+
+    font-family: 'Montserrat';\r
+
+    font-style: normal;\r
+
+    font-weight: 500;\r
+
+    font-size: 14px !important;\r
+
+    line-height: 22px;\r
+
+    color: #1E4452 !important;\r
+
+    }\r
+
+    \r
+
+    .needAnalysisHeader {\r
+
+    \  /*width: 652px;*/\r
+
+    height: 24px;\r
+
+    font-family: 'Inter';\r
+
+    font-style: normal;\r
+
+    font-weight: 600;\r
+
+    font-size: 16px;\r
+
+    line-height: 24px;\r
+
+    letter-spacing: 0.025em;\r
+
+    text-transform: uppercase;\r
+
+    color: #0284C7;\r
+
+    }\r
+
+    \r
+
+    .mainHeader {\r
+
+    \  margin-top: 16px;\r
+
+    \  margin-bottom: 16px;\r
+
+    \  /*width: 652px;*/\r
+
+    \  /*height: 32px;*/\r
+
+    font-family: 'Montserrat';\r
+
+    font-style: normal;\r
+
+    font-weight: 700;\r
+
+    font-size: 26px;\r
+
+    line-height: 32px;\r
+
+    color: #005F7F;;\r
+
+    }\r
+
+    \r
+
+    .helpText {\r
+
+    \  /*width: 652px;*/\r
+
+    height: 24px;\r
+
+    margin-bottom: 64px;\r
+
+    font-family: 'Montserrat';\r
+
+    font-style: normal;\r
+
+    font-weight: 500;\r
+
+    font-size: 16px;\r
+
+    line-height: 22px;\r
+
+    color: #272727;\r
+
+    }\r
+
+    \r
+
+    .date-picker .MuiFormControl-root{\r
+
+    \  margin-top: 0px;\r
+
+    }\r
+
+    .date-picker .MuiSvgIcon-root{\r
+
+    \  font-size: 1.65rem !important;\r
+
+    \  margin-top: -3px !important;\r
+
+    }\r
+
+    \r
+
+    .date-picker .MuiInputBase-root::before, \r
+
+    .date-picker .MuiInputBase-root::after, \r
+
+    .date-picker .MuiFormControl-root::before,\r
+
+    .date-picker .MuiFormControl-root::after\r
+
+    {\r
+
+    \  display: none !important;\r
+
+    }\r
+
+    .date-picker .MuiInput-formControl {\r
+
+    \    width: 320px;\r
+
+    \    height: 56px;\r
+
+    \    background: #FFFFFF;\r
+
+    \    border: 1px solid #D1D5DB;\r
+
+    \    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);\r
+
+    \    border-radius: 6px;\r
+
+    }\r
+
+    .date-picker .MuiFormHelperText-root.Mui-error {\r
+
+    \    color: #ff6060;\r
+
+    }\r
+
+    \r
+
+    .date-picker .MuiInputBase-input {\r
+
+    \  padding-left: 1rem;\r
+
+    }\r
+
+    \r
+
+    .date-picker .MuiInputBase-input::placeholder {\r
+
+    \  color: rgb(52, 52, 52);\r
+
+    \  font-style: normal;\r
+
+    \  font-weight: 400;\r
+
+    \  font-size: 12pt;\r
+
+    \  line-height: 18pt;\r
+
+    \  letter-spacing: 0.01rem;\r
+
+    \  opacity: 1;\r
+
+    }\r
+
+    \r
+
+    \r
+
+    .errordate .MuiInput-formControl {\r
+
+    \    border: 1px solid red;\r
+
+    }\r
+
+    \r
+
+    /*.radiobtn Button {*/\r
+
+    /*    align-items: center;*/\r
+
+    /*   width: 144px;*/\r
+
+    /*   height:40px;*/\r
+
+    /*   border: 1px solid #D1D5DB;*/\r
+
+    /*background-color: white !important;*/\r
+
+    /*}*/\r
+
+    \r
+
+    \r
+
+    .radiobtn {\r
+
+    \   width: 144px !important;\r
+
+    \   height:40px;\r
+
+    \   background: #FFFFFF;\r
+
+    \   border: 1px solid #979797;\r
+
+    \   border-radius: 3px;\r
+
+    \   padding-left:16px;\r
+
+    }\r
+
+    \r
+
+    .ageErrorMsg {\r
+
+    \  margin-top:18px;\r
+
+    \  padding-left:10px;\r
+
+    \  font-family: 'Montserrat';\r
+
+    \  font-style: normal;\r
+
+    \  font-weight: 400;\r
+
+    \  font-size: 14px;\r
+
+    \  line-height: 20px;\r
+
+    \  color: #991B1B;\r
+
+    }\r
+
+    \r
+
+    .backBtn Button {\r
+
+    \  padding: 12px 24px;\r
+
+    \  width: 148px;\r
+
+    \  height: 48pxpx;\r
+
+    \  background: #E3E3E3;\r
+
+    \  border-radius: 24px;\r
+
+    \  background-image:
+    url(\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXd\
+    Cb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMD\
+    Avc3ZnIj4NCjxwYXRoIGQ9Ik0xNS4wMDA1IDcuMDAwMjJIMy44MzA0N0w4LjcxMDQ3IDIuMTIwM\
+    jFDOS4xMDA0NyAxLjczMDIxIDkuMTAwNDcgMS4wOTAyMSA4LjcxMDQ3IDAuNzAwMjE1QzguMzIw\
+    NDcgMC4zMTAyMTUgNy42OTA0NyAwLjMxMDIxNSA3LjMwMDQ3IDAuNzAwMjE1TDAuNzEwNDY5IDc\
+    uMjkwMjJDMC4zMjA0NjkgNy42ODAyMSAwLjMyMDQ2OSA4LjMxMDIxIDAuNzEwNDY5IDguNzAwMj\
+    FMNy4zMDA0NyAxNS4yOTAyQzcuNjkwNDcgMTUuNjgwMiA4LjMyMDQ3IDE1LjY4MDIgOC43MTA0N\
+    yAxNS4yOTAyQzkuMTAwNDcgMTQuOTAwMiA5LjEwMDQ3IDE0LjI3MDIgOC43MTA0NyAxMy44ODAy\
+    TDMuODMwNDcgOS4wMDAyMUgxNS4wMDA1QzE1LjU1MDUgOS4wMDAyMSAxNi4wMDA1IDguNTUwMjE\
+    gMTYuMDAwNSA4LjAwMDIyQzE2LjAwMDUgNy40NTAyMSAxNS41NTA1IDcuMDAwMjIgMTUuMDAwNS\
+    A3LjAwMDIyWiIgZmlsbD0iIzI3MjcyNyIvPg0KPC9zdmc+DQo=\");\r
+
+    \  background-repeat: no-repeat;\r
+
+    \  background-position-x: 22px;\r
+
+    \  background-position-y: 16px;\r
+
+    }\r
+
+    \r
+
+    .backBtn Button:hover {\r
+
+    \  background: #E3E3E3;\r
+
+    \  background-image:
+    url(\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXd\
+    Cb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMD\
+    Avc3ZnIj4NCjxwYXRoIGQ9Ik0xNS4wMDA1IDcuMDAwMjJIMy44MzA0N0w4LjcxMDQ3IDIuMTIwM\
+    jFDOS4xMDA0NyAxLjczMDIxIDkuMTAwNDcgMS4wOTAyMSA4LjcxMDQ3IDAuNzAwMjE1QzguMzIw\
+    NDcgMC4zMTAyMTUgNy42OTA0NyAwLjMxMDIxNSA3LjMwMDQ3IDAuNzAwMjE1TDAuNzEwNDY5IDc\
+    uMjkwMjJDMC4zMjA0NjkgNy42ODAyMSAwLjMyMDQ2OSA4LjMxMDIxIDAuNzEwNDY5IDguNzAwMj\
+    FMNy4zMDA0NyAxNS4yOTAyQzcuNjkwNDcgMTUuNjgwMiA4LjMyMDQ3IDE1LjY4MDIgOC43MTA0N\
+    yAxNS4yOTAyQzkuMTAwNDcgMTQuOTAwMiA5LjEwMDQ3IDE0LjI3MDIgOC43MTA0NyAxMy44ODAy\
+    TDMuODMwNDcgOS4wMDAyMUgxNS4wMDA1QzE1LjU1MDUgOS4wMDAyMSAxNi4wMDA1IDguNTUwMjE\
+    gMTYuMDAwNSA4LjAwMDIyQzE2LjAwMDUgNy40NTAyMSAxNS41NTA1IDcuMDAwMjIgMTUuMDAwNS\
+    A3LjAwMDIyWiIgZmlsbD0iIzk3NDdmZiIvPg0KPC9zdmc+DQo=\");\r
+
+    \  background-repeat: no-repeat;\r
+
+    \  background-position-x: 22px;\r
+
+    \  background-position-y: 16px;\r
+
+    }\r
+
+    \r
+
+    .nextBtn Button {\r
+
+    \  padding: 12px 24px;\r
+
+    \  width: 116px;\r
+
+    \  height: 51px;\r
+
+    \  background: #F88D2B;\r
+
+    \  border-radius: 24px;\r
+
+    \  background-image:
+    url(\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXd\
+    Cb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMD\
+    Avc3ZnIj4NCjxwYXRoIGQ9Ik0xIDkuMDAwMjFIMTIuMTdMNy4yOSAxMy44ODAyQzYuOSAxNC4yN\
+    zAyIDYuOSAxNC45MTAyIDcuMjkgMTUuMzAwMkM3LjY4IDE1LjY5MDIgOC4zMSAxNS42OTAyIDgu\
+    NyAxNS4zMDAyTDE1LjI5IDguNzEwMjFDMTUuNjggOC4zMjAyMSAxNS42OCA3LjY5MDIyIDE1LjI\
+    5IDcuMzAwMjJMOC43MSAwLjcwMDIxNUM4LjMyIDAuMzEwMjE1IDcuNjkgMC4zMTAyMTUgNy4zID\
+    AuNzAwMjE1QzYuOTEgMS4wOTAyMSA2LjkxIDEuNzIwMjIgNy4zIDIuMTEwMjJMMTIuMTcgNy4wM\
+    DAyMkgxQzAuNDUgNy4wMDAyMiAwIDcuNDUwMjEgMCA4LjAwMDIyQzAgOC41NTAyMSAwLjQ1IDku\
+    MDAwMjEgMSA5LjAwMDIxWiIgZmlsbD0id2hpdGUiLz4NCjwvc3ZnPg==\");\r
+
+    \  background-repeat: no-repeat;\r
+
+    \  background-position-x: 75px;\r
+
+    \  background-position-y: 15px;\r
+
+    }\r
+
+    \r
+
+    \r
+
+    .nextBtn Button:hover {\r
+
+    \  background: #F88D2B;\r
+
+    \  background-image:
+    url(\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXd\
+    Cb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMD\
+    Avc3ZnIj4NCjxwYXRoIGQ9Ik0xIDkuMDAwMjFIMTIuMTdMNy4yOSAxMy44ODAyQzYuOSAxNC4yN\
+    zAyIDYuOSAxNC45MTAyIDcuMjkgMTUuMzAwMkM3LjY4IDE1LjY5MDIgOC4zMSAxNS42OTAyIDgu\
+    NyAxNS4zMDAyTDE1LjI5IDguNzEwMjFDMTUuNjggOC4zMjAyMSAxNS42OCA3LjY5MDIyIDE1LjI\
+    5IDcuMzAwMjJMOC43MSAwLjcwMDIxNUM4LjMyIDAuMzEwMjE1IDcuNjkgMC4zMTAyMTUgNy4zID\
+    AuNzAwMjE1QzYuOTEgMS4wOTAyMSA2LjkxIDEuNzIwMjIgNy4zIDIuMTEwMjJMMTIuMTcgNy4wM\
+    DAyMkgxQzAuNDUgNy4wMDAyMiAwIDcuNDUwMjEgMCA4LjAwMDIyQzAgOC41NTAyMSAwLjQ1IDku\
+    MDAwMjEgMSA5LjAwMDIxWiIgZmlsbD0iIzk3NDdmZiIvPg0KPC9zdmc+\");\r
+
+    \  background-repeat: no-repeat;\r
+
+    \  background-position-x: 75px;\r
+
+    \  background-position-y: 15px;\r
+
+    }\r
+
+    \r
+
+    .nextBtn button:disabled{\r
+
+    \  background: #F9D1B6;\r
+
+    \  background-image:
+    url(\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXd\
+    Cb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMD\
+    Avc3ZnIj4NCjxwYXRoIGQ9Ik0xIDkuMDAwMjFIMTIuMTdMNy4yOSAxMy44ODAyQzYuOSAxNC4yN\
+    zAyIDYuOSAxNC45MTAyIDcuMjkgMTUuMzAwMkM3LjY4IDE1LjY5MDIgOC4zMSAxNS42OTAyIDgu\
+    NyAxNS4zMDAyTDE1LjI5IDguNzEwMjFDMTUuNjggOC4zMjAyMSAxNS42OCA3LjY5MDIyIDE1LjI\
+    5IDcuMzAwMjJMOC43MSAwLjcwMDIxNUM4LjMyIDAuMzEwMjE1IDcuNjkgMC4zMTAyMTUgNy4zID\
+    AuNzAwMjE1QzYuOTEgMS4wOTAyMSA2LjkxIDEuNzIwMjIgNy4zIDIuMTEwMjJMMTIuMTcgNy4wM\
+    DAyMkgxQzAuNDUgNy4wMDAyMiAwIDcuNDUwMjEgMCA4LjAwMDIyQzAgOC41NTAyMSAwLjQ1IDku\
+    MDAwMjEgMSA5LjAwMDIxWiIgZmlsbD0id2hpdGUiLz4NCjwvc3ZnPg==\");\r
+
+    \  background-repeat: no-repeat;\r
+
+    \  background-position-x: 75px;\r
+
+    \  background-position-y: 15px;\r
+
+    }\r
+
+    \r
+
+    .previousLabel{\r
+
+    \  font-family: 'Montserrat';\r
+
+    \  padding-left:10px;\r
+
+    font-style: normal;\r
+
+    font-weight: 700;\r
+
+    font-size: 16px;\r
+
+    line-height: 22px;\r
+
+    color: #272727;\r
+
+    }\r
+
+    .nextLabel{\r
+
+    \  font-family: 'Montserrat';\r
+
+    \  padding-right:10px;\r
+
+    font-style: normal;\r
+
+    font-weight: 700;\r
+
+    font-size: 16px;\r
+
+    line-height: 22px;\r
+
+    color: #FFFFFF;\r
+
+    }\r
+
+    .MuiBackdrop-root {\r
+
+    \  position: fixed !important;\r
+
+    }\r
+
+    \r
+
+    .stepperSection {\r
+
+    \  /*margin-left:10px;*/\r
+
+    \  /*margin-top:50px;*/\r
+
+    \    background: #E9F7FB !important;\r
+
+    box-shadow: 0px 1px 1px rgba(30, 68, 82, 0.2), 0px 0px 1px rgba(30, 68,
+    82, 0.2);\r
+
+    border-radius: 21px;\r
+
+    /*left:1% !important;*/\r
+
+    /*top: 30% !important;*/\r
+
+    /*position:absolute !important;*/\r
+
+    /*width:25% !important;*/\r
+
+    \r
+
+    }\r
+
+    @media only screen and (min-width: 768px) {\r
+
+    \  \r
+
+    .stepperSection {\r
+
+    \  margin-left:10px;\r
+
+    \  margin-top:50px;\r
+
+    \    background: #E9F7FB !important;\r
+
+    box-shadow: 0px 1px 1px rgba(30, 68, 82, 0.2), 0px 0px 1px rgba(30, 68,
+    82, 0.2);\r
+
+    border-radius: 21px;\r
+
+    left:1% !important;\r
+
+    top: 30% !important;\r
+
+    position:absolute !important;\r
+
+    width:25% !important;\r
+
+    \r
+
+    }\r
+
+    \  \r
+
+    .cs-section-container{\r
+
+    \  position: unset !important;\r
+
+    }\r
+
+    }"
+  header:
+    content: >-
+      <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet">
+
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" type="text/css" href="mystyle.css">
+    _id: 65df3becd6899a414832f1ea
+  theme:
+    palette:
+      light:
+        primary:
+          main: "#326f87"
+          light: rgb(91, 139, 159)
+          dark: rgb(35, 77, 94)
+          contrastText: "#fff"
+      dark:
+        primary:
+          main: "#0284c7"
+          light: rgb(52, 156, 210)
+          dark: rgb(1, 92, 139)
+          contrastText: "#fff"
+  error:
+    url: ""
+    redirectMode: false
+    pageId: 91055421-5ca9-4a63-88bf-fa663e67de34
+  stepper:
+    stepperType: vertical
+    subStepType:
+      label: Dots
+      value: dots
+    steps:
+      - label: Step 1
+        value: d3a791a4-1c8d-4f70-bf5e-7d5bb171ab40
+        numOfSubSteps: 2
+    keysToDisableNavigation: []
+    disabledSteps: []
+    isSubSteps: true
+    customCss: >-
+      
+
+      .MuiStepLabel-label{
+        font-family: 'Montserrat';
+      font-style: normal;
+
+      font-weight: 500;
+
+      font-size: 14px;
+
+      line-height: 20px;
+
+      color: #272727;
+
+      }
+
+
+      .MuiStepLabel-label.MuiStepLabel-active{
+
+      color: #009AC7; 
+
+      }
+
+
+      .MuiStepIcon-root.MuiStepIcon-active {
+        color: #009AC7;
+      }
+
+
+      .MuiStepIcon-root{
+       
+        color: #FFFFFF;
+      }
+
+      .MuiStepIcon-root.MuiStepIcon-active>text{
+         fill: #FFFFFF !important;
+
+      }
+
+
+      .MuiStepIcon-text{
+         fill: #8A8A8A !important;
+      }
+
+      .MuiStepper-vertical{
+        /*padding:3rem;*/
+      /*  margin-top:calc(100% - 90%);*/
+
+      /*  background: #EEEBF5;*/
+
+      /*box-shadow: 0px 1px 1px rgba(30, 68, 82, 0.2), 0px 0px 1px rgba(30, 68, 82, 0.2);*/
+
+      /*border-radius: 21px;*/
+
+
+      }
+
+
+      .MuiStepConnector-root{
+        padding:0;
+
+        
+      }
+
+      .MuiStepConnector-line {
+        color:#8A8A8A;
+        margin-left: 8px
+      }
+
+      .MuiLinearProgress-barColorPrimary{
+        background: #009AC7;
+      }
+
+      .MuiStepConnector-lineVertical {
+        min-height:49.33px;
+      }
+
+
+      & .MuiSvgIcon-root{
+            border: 1px solid #8A8A8A;
+          border-radius: 20px;
+           height:40px;
+            width:auto;
+      }
+
+      & .MuiSvgIcon-root.MuiStepIcon-active{
+            border: none;
+
+           
+      }
+
+      .MuiStepIcon-root.MuiStepIcon-completed {
+        color:#326F87;
+        border:none;
+      }
+
+      .MuiStepLabel-label.MuiStepLabel-completed{
+          color:#326F87;
+      }
+
+      .MuiMobileStepper-root{
+        background: #E9F7FB;
+      }
+
+      .MuiMobileStepper-dot{
+            background: #FFFFFF;
+          border: 1px solid #8A8A8A;
+      }
+  variables:
+    submissionData:
+      80aff75c-5044-4be4-8945-e227186dbd46:
+        name: button
+        id: 80aff75c-5044-4be4-8945-e227186dbd46
+        dataType: text
+        varType: submissionData
+      7bc066fb-094a-4b9d-8fda-539f5f4ada69:
+        name: premiumAge
+        id: 7bc066fb-094a-4b9d-8fda-539f5f4ada69
+        dataType: text
+        varType: submissionData
+      65513282-0567-497f-9414-02f66837767b:
+        name: gender
+        id: 65513282-0567-497f-9414-02f66837767b
+        dataType: text
+        varType: submissionData
+      bf89142c-549f-47b7-88f8-edfc49f45ab6:
+        name: dateOfBirth
+        id: bf89142c-549f-47b7-88f8-edfc49f45ab6
+        dataType: date
+        varType: submissionData
+      b6a3f7bd-a11e-4178-a3a2-d3404b28888e:
+        name: smoker
+        id: b6a3f7bd-a11e-4178-a3a2-d3404b28888e
+        dataType: text
+        varType: submissionData
+      eee2d5f0-0986-4732-b3aa-ec128185e605:
+        name: sumInsured
+        id: eee2d5f0-0986-4732-b3aa-ec128185e605
+        dataType: text
+        varType: submissionData
+      4d88f39d-90a3-443f-9e26-9e62f78ef3b7:
+        name: product
+        id: 4d88f39d-90a3-443f-9e26-9e62f78ef3b7
+        dataType: text
+        varType: submissionData
+      1638196c-e8d5-4af0-a488-e2f2c6de0731:
+        name: monthlyPremium100
+        id: 1638196c-e8d5-4af0-a488-e2f2c6de0731
+        dataType: text
+        varType: submissionData
+      b1b528a0-39c7-41c0-8bdd-fdd770e9944a:
+        name: monthlyPremium75
+        id: b1b528a0-39c7-41c0-8bdd-fdd770e9944a
+        dataType: text
+        varType: submissionData
+      bd23fce2-866e-407f-8da2-45bc48b2bc58:
+        name: monthlyPremium65
+        id: bd23fce2-866e-407f-8da2-45bc48b2bc58
+        dataType: text
+        varType: submissionData
+      7f018e4e-3a78-476f-ac96-dd46296e46f1:
+        name: sum
+        id: 7f018e4e-3a78-476f-ac96-dd46296e46f1
+        dataType: text
+        varType: submissionData
+      7014159d-bef7-4f87-a650-fe88bd593d8e:
+        name: age
+        id: 7014159d-bef7-4f87-a650-fe88bd593d8e
+        dataType: text
+        varType: submissionData
+      68554fd6-e152-4502-a230-55b05ea9ac9d:
+        name: clientExists
+        id: 68554fd6-e152-4502-a230-55b05ea9ac9d
+        dataType: text
+        varType: submissionData
+      ecc521b1-1845-4b90-933a-a6ea61bc4690:
+        name: previousSum
+        id: ecc521b1-1845-4b90-933a-a6ea61bc4690
+        dataType: text
+        varType: submissionData
+  envVariables:
+    ACE_API_BASE_URL:
+      draft: https://dev-republic-server.sapienspaas.com
+      test: https://dev-republic-server.sapienspaas.com
+      production: https://dev-republic-server.sapienspaas.com
+    headersUserAgent:
+      draft: Sapiens
+      test: Sapiens
+      production: Sapiens
+    republicUrl:
+      draft: https://republiclifett.com/
+      test: https://republiclifett.com/
+      production: https://republiclifett.com/
+  flowActionTimeout:
+    timeout: "300000"
+isLive: true
+isTemplate: false
+tags: null
+company: 0c706fc5-fac4-45d8-b216-7f072a8f10f2
+users:
+  - 261953b3-8923-437e-953f-4d8084a0248f
+stagingState: draft
+ranMigrations:
+  - 20220110200338-deleteDuplicates.js
+  - 20220111103009-mustacheExpressions.js
+  - 20220211105753-forms_publishing.js
+  - 20220214152546-forms_publishing.js
+  - 20220426111554-set_ran_migrations.js
+  - 20220506122750-add_imageAssetId_to_fields.js
+metaModels: []
+swaggerApi: []
+metaModelsFieldsData: []
+formShouldBeCommitted: false
+formShouldBePushed: true
+createdAt: 2024-07-08T07:15:13.775Z
+formGroupId: 86d53415-6105-48fa-aff6-ab7253aa29cb
+id: c2808488-ec65-46c6-aaf7-63c4f3684dbc

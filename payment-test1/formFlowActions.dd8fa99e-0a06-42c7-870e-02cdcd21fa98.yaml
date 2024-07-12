@@ -1,0 +1,79 @@
+- _id: 2505b574-8d2f-4054-b08e-73377b75435d
+  actionId: 3c0005d4-5866-47e0-8738-6afab5a2b73c
+  type: go-to-page
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  position:
+    x: 358
+    y: 291
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: 50b69b6a-9717-4e12-8dcf-a4158b8b60ea
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-25T10:14:28.391Z
+  updatedAt: 2023-04-25T10:14:28.391Z
+  page: b62bce24-9439-459c-a6b7-20f41e8dadbc
+- _id: dc106586-f8ec-486b-bd0d-c6ec8d1293a6
+  actionId: 50b69b6a-9717-4e12-8dcf-a4158b8b60ea
+  type: go-to-page
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  position:
+    x: 366
+    y: 398
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: ""
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-25T10:53:03.736Z
+  updatedAt: 2023-04-25T10:53:03.736Z
+  page: d1e9bf63-f1f0-435b-bd6d-3a99a47b2f72
+- _id: d9993215-3194-42c3-a1c1-2d17aabc9386
+  actionId: eae220a0-b448-4ac8-81b5-6e4e231ab9b6
+  type: save-variables
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  position:
+    x: 357
+    y: 214
+  nextActions:
+    - type: output
+      label: ""
+      value: ""
+      actionId: 3c0005d4-5866-47e0-8738-6afab5a2b73c
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-25T10:10:03.491Z
+  updatedAt: 2023-04-25T10:10:03.491Z
+  flowVars:
+    - key: paymentData.payService
+      value: powertranz
+    - key: paymentData.data.total
+      value: "100"
+    - key: paymentData.data.currency
+      value: "780"
+    - key: paymentData.data.PageSet
+      value: test
+    - key: paymentData.data.PageName
+      value: responsive
+    - key: paymentData.data.ChallengeWindowSize
+      value: "4"
+  submissionData: []

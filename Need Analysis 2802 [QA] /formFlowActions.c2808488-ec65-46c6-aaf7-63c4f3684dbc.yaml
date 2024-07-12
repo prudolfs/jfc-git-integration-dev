@@ -1,0 +1,1477 @@
+- _id: 28710dcf-f89d-427c-8a33-d32b3658a9ae
+  actionId: 00b76643-e527-47db-8351-a2d99166a753
+  type: api-request
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 346.01043701171875
+    y: 324.0078125
+  nextActions:
+    - type: output
+      label: ""
+      value: true
+      actionId: cfedc918-ba00-4a26-890a-85ea7e090ffd
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-11-25T06:38:33.280Z
+  updatedAt: 2022-11-25T06:38:33.280Z
+  requestData:
+    method: POST
+    url: "{{{envs.ACE_API_BASE_URL}}}/v1/calculateAge"
+    body:
+      - key: dateOfBirth
+        value: "{{{data.dateOfBirth}}}"
+    headers:
+      - key: user-agent
+        value: "{{{envs.headersUserAgent}}}"
+      - key: authorization
+        value: "{{{data.token}}}"
+  label: get Age
+- _id: c0b4dac5-aa83-4893-b118-dd137e892137
+  actionId: 1125a5ee-4ccc-4fcd-8cdc-79bfcbfef616
+  type: go-to-page
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 296
+    y: 87
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: cf8f4ecb-0683-4b61-8939-05cc399c513a
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-11-25T04:56:14.631Z
+  updatedAt: 2022-11-25T04:56:14.631Z
+  page: ac4ec6db-c0b5-46ff-a2bf-195ce3c34b37
+- _id: 753c5d51-d403-4917-8f06-1881b528ee21
+  actionId: 120237f8-2f75-4f8f-bf8c-8902eaced713
+  type: api-request
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 615.0104370117188
+    y: 1066.0078125
+  nextActions:
+    - type: output
+      label: ""
+      value: true
+      actionId: fc54e33b-7fc6-40e7-a768-f66b0ffd4c87
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-13T09:16:09.811Z
+  updatedAt: 2023-04-13T09:16:09.811Z
+  label: Term life-getMonthlyPremiums
+  requestData:
+    method: POST
+    url: "{{{envs.ACE_API_BASE_URL}}}/v1/createAnonymousQuote"
+    body:
+      - key: dateOfBirth
+        value: "{{data.dateOfBirth}}"
+      - key: sumInsured
+        value: "{{data.sumInsured}}"
+      - key: smoker
+        value: "{{data.smoker}}"
+      - key: gender
+        value: "{{data.gender}}"
+      - key: premiumAge100
+        value: "100"
+      - key: calculatedSumInsured
+        value: "{{data.customSum}}"
+      - key: product
+        value: "{{data.product_no}}"
+    headers:
+      - key: user-agent
+        value: "{{{envs.headersUserAgent}}}"
+      - key: authorization
+        value: "{{{data.token}}}"
+- _id: f58df1d7-2f96-4faa-8283-5d6f498af189
+  actionId: 122293ed-600d-43df-8041-146dc46059c3
+  type: save-variables
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 425.52971845672556
+    y: 1494.2377476538059
+  nextActions:
+    - type: output
+      label: ""
+      value: ""
+      actionId: ba962f52-36ab-4992-9212-2386240aa7da
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-12-16T06:09:09.542Z
+  updatedAt: 2022-12-16T06:09:09.542Z
+  label: set flag for need analysis
+  submissionData:
+    - key: fromNeedAnalysis
+      value: "1"
+    - key: sumInsured
+      value: "{{data.SumAssured}}"
+- _id: 71072bcc-54e5-404f-9233-9485fc7a0947
+  actionId: 16f109fc-0880-417e-b752-131965abe907
+  type: go-to-page
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 244.96083883675118
+    y: 1265.8859923531452
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: bf670298-8b55-4e84-a68e-836ae266ac77
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-11-25T04:57:15.960Z
+  updatedAt: 2022-11-25T04:57:15.960Z
+  page: beefc349-a912-4316-a104-9f025dcd188d
+- _id: d844be12-fd7b-4018-b6e0-808d839b8e8a
+  actionId: 18383ba8-673b-4d21-9a41-a2d14c0db7ec
+  type: variables-navigation
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 614.0104370117188
+    y: 171.0078125
+  nextActions:
+    - type: output
+      label: Default (else)
+      value: default
+      actionId: ""
+    - label: customer portal
+      condition:
+        rootId: 371ed19c-97e2-43e1-850d-bca9b22cd78e
+        nodes:
+          371ed19c-97e2-43e1-850d-bca9b22cd78e:
+            id: 371ed19c-97e2-43e1-850d-bca9b22cd78e
+            type: condition
+            key: data.customerPortal
+            operator: eq
+            value: Yes
+      actionId: c1d57389-dfcf-4c5a-afd4-807a8bf8835f
+    - label: public portal
+      condition:
+        rootId: 7252eae2-2af5-4f86-b911-070609406c91
+        nodes:
+          b8905893-54f3-497f-8128-c15195aab67e:
+            id: b8905893-54f3-497f-8128-c15195aab67e
+            type: condition
+            key: data.customerPortal
+            operator: nexist
+          7252eae2-2af5-4f86-b911-070609406c91:
+            id: 7252eae2-2af5-4f86-b911-070609406c91
+            type: group
+            operator: or
+            children:
+              - b8905893-54f3-497f-8128-c15195aab67e
+              - 1a8fd408-b9f7-4d52-8da1-afdab4b7d472
+          1a8fd408-b9f7-4d52-8da1-afdab4b7d472:
+            id: 1a8fd408-b9f7-4d52-8da1-afdab4b7d472
+            type: condition
+            key: data.customerPortal
+            operator: eq
+            value: No
+      actionId: 1125a5ee-4ccc-4fcd-8cdc-79bfcbfef616
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-04T06:55:45.819Z
+  updatedAt: 2023-04-04T06:55:45.819Z
+  label: check portal
+- _id: c9e89635-1570-45b4-a7ab-a306a04c152b
+  actionId: 308827b0-bbac-44b4-a21c-51d080fe4e9f
+  type: save-variables
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 1146.906320788959
+    y: 451.7051490617433
+  nextActions:
+    - type: output
+      label: ""
+      value: ""
+      actionId: 8d736fc5-0022-407b-bbc9-f03a727f1de1
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-05T12:48:46.906Z
+  updatedAt: 2023-04-05T12:48:46.906Z
+  submissionData:
+    - key: smoker
+      value: "0"
+    - key: isClientExists
+      value: "true"
+  label: set default values
+- _id: 0c74133b-cbce-4f04-9cff-0515a5912938
+  actionId: 332a818f-311d-4364-8b81-66d1c0810d6f
+  type: api-request
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 565
+    y: 689
+  nextActions:
+    - type: output
+      label: ""
+      value: true
+      actionId: 7e129917-bdd4-41cd-9f3a-0cafe07d8522
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-02-01T03:47:43.673Z
+  updatedAt: 2023-02-01T03:47:43.673Z
+  requestData:
+    method: POST
+    url: "{{{envs.ACE_API_BASE_URL}}}/v1/validateSumInsured"
+    body:
+      - key: sum
+        value: "{{data.calculatedSA}}"
+      - key: age
+        value: "{{data.age}}"
+      - key: clientExists
+        value: "false"
+      - key: previousSum
+        value: "0"
+      - key: suggestingSumAssured
+        value: "0"
+      - key: customerPortal
+        value: "{{{data.customerPortal}}}"
+    headers:
+      - key: user-agent
+        value: "{{{envs.headersUserAgent}}}"
+      - key: authorization
+        value: "{{{data.token}}}"
+  label: getSumInsuredErrorMsg
+- _id: 8fdeb35e-cbd3-4dac-a7e2-f31ebacc8507
+  actionId: 3495a894-6eb1-4892-ac99-58eb4c369717
+  type: save-variables
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 309
+    y: 1130.9572471324295
+  nextActions:
+    - type: output
+      label: ""
+      value: ""
+      actionId: 16f109fc-0880-417e-b752-131965abe907
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-12-07T08:23:37.928Z
+  updatedAt: 2022-12-07T08:23:37.928Z
+  submissionData:
+    - key: monthlyPremium100
+      value: "{{data.monthlyPremium100}}"
+    - key: monthlyPremium75
+      value: "{{data.monthlyPremium75}}"
+    - key: monthlyPremium65
+      value: "{{data.monthlyPremium65}}"
+  label: "set monthly premium "
+- _id: 82cd94b8-f119-4c8c-9eb2-61e84240cbbf
+  actionId: 34b99216-567b-49da-932d-db1efb75d449
+  type: save-variables
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 814.67
+    y: 855.74
+  nextActions:
+    - type: output
+      label: ""
+      value: ""
+      actionId: 9759657a-6855-4793-a788-18afd6ef354a
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-02-01T03:57:29.001Z
+  updatedAt: 2023-02-01T03:57:29.001Z
+  submissionData:
+    - key: customSum
+      value: "{{data.calculatedSumAssured}}"
+- _id: fa25ddb7-9eff-4409-94c1-c858e69bb6f3
+  actionId: 359445d3-7398-4894-bc9e-07112d2ae57f
+  type: save-variables
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 556
+    y: 85
+  nextActions:
+    - type: output
+      label: ""
+      value: ""
+      actionId: 18383ba8-673b-4d21-9a41-a2d14c0db7ec
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-01-10T12:03:36.796Z
+  updatedAt: 2023-01-10T12:03:36.796Z
+  submissionData:
+    - key: isCalculateEnabled
+      value: "false"
+    - key: suggestingSumAssured
+      value: "0"
+    - key: isUserCalculatedSA
+      value: "1"
+    - key: enableCalculate
+      value: "false"
+    - key: dateformat
+      value: DD/MM/YYYY
+    - key: CustomerPortal
+      value: "true"
+    - key: rlicSupportNo
+      value: +1(868)-625-3617 Ext. 69474, 69475, 69482
+    - key: rlicSupportMail
+      value: rlicsupport@rfhl.com
+    - key: token
+      value: "{{{data.token}}}"
+    - key: republicUrl
+      value: "{{{envs.republicUrl}}}"
+    - key: customerPortal
+      value: No
+    - key: product_no
+      value: "1"
+- _id: 7597f383-18b8-4304-8f57-62f70cf961c3
+  actionId: 380d8818-6987-406c-abd0-da42c77678bd
+  type: go-to-page
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 92.01043701171875
+    y: 43.0078125
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: ""
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-28T10:58:14.013Z
+  updatedAt: 2023-04-28T10:58:14.013Z
+  page: 5a098ae1-9223-45d5-b85b-b7a0733eb55e
+- _id: 8555e8a3-2273-48e8-848c-742692117d01
+  actionId: 3d700508-b6ce-444b-9555-7c5d9dcbfbe7
+  type: variables-navigation
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 1169.52
+    y: 338.49
+  nextActions:
+    - type: output
+      label: Default (else)
+      value: default
+      actionId: ""
+    - label: navigate to full Quote
+      condition:
+        rootId: 693912ca-91bd-4266-8973-3cc1d52874b5
+        nodes:
+          693912ca-91bd-4266-8973-3cc1d52874b5:
+            id: 693912ca-91bd-4266-8973-3cc1d52874b5
+            type: condition
+            key: data.allowUserToFullQuote
+            operator: eq
+            value: "true"
+      actionId: 308827b0-bbac-44b4-a21c-51d080fe4e9f
+    - label: navigate to dashboard popup
+      condition:
+        rootId: 554c48ac-e8e3-4b8d-b8ec-e69fa8e47274
+        nodes:
+          dec91ef5-eeba-4d15-a218-6968882c219c:
+            id: dec91ef5-eeba-4d15-a218-6968882c219c
+            type: condition
+            key: data.allowUserToFullQuote
+            operator: eq
+            value: "false"
+          554c48ac-e8e3-4b8d-b8ec-e69fa8e47274:
+            id: 554c48ac-e8e3-4b8d-b8ec-e69fa8e47274
+            type: group
+            operator: and
+            children:
+              - dec91ef5-eeba-4d15-a218-6968882c219c
+              - d99fcbc7-2d32-4084-bcef-c5a9c07f294e
+          d99fcbc7-2d32-4084-bcef-c5a9c07f294e:
+            id: d99fcbc7-2d32-4084-bcef-c5a9c07f294e
+            type: condition
+            key: data.noOfQuotes
+            operator: eq
+            value: "0"
+      actionId: 497fb15e-e8c6-48ed-87dd-e53bd9d1281d
+    - label: navigate to quotes popup
+      condition:
+        rootId: 726e9f28-9fbf-4aa0-b45e-337381e02d33
+        nodes:
+          9202dbe3-7934-4f7b-a8b9-4dd86644e911:
+            id: 9202dbe3-7934-4f7b-a8b9-4dd86644e911
+            type: condition
+            key: data.allowUserToFullQuote
+            operator: eq
+            value: "false"
+          726e9f28-9fbf-4aa0-b45e-337381e02d33:
+            id: 726e9f28-9fbf-4aa0-b45e-337381e02d33
+            type: group
+            operator: and
+            children:
+              - 9202dbe3-7934-4f7b-a8b9-4dd86644e911
+              - ea1e5e16-dd25-49c4-91d7-0451632bb4b3
+          ea1e5e16-dd25-49c4-91d7-0451632bb4b3:
+            id: ea1e5e16-dd25-49c4-91d7-0451632bb4b3
+            type: condition
+            key: data.noOfQuotes
+            operator: gt
+            value: "0"
+      actionId: 5606848d-7c3d-4bfd-895a-3e5592ac9ddb
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-19T10:25:17.898Z
+  updatedAt: 2023-04-19T10:25:17.898Z
+- _id: 42658432-0dc4-47d7-aa32-cc0e2b456f96
+  actionId: 41a2fb4e-9d3a-467a-999a-89cf91521ae4
+  type: go-to-page
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 301
+    y: 586
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: a9a1aad1-414c-4c8a-86a0-d67d6c71b62b
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-11-25T04:56:44.378Z
+  updatedAt: 2022-11-25T04:56:44.378Z
+  page: 3457c85d-3842-4a59-a16a-3619141070f7
+- _id: db114e31-edaa-4a43-b3e6-646bf8b3cb88
+  actionId: 497fb15e-e8c6-48ed-87dd-e53bd9d1281d
+  type: go-to-page
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 1388
+    y: 499
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: ""
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-19T11:28:51.065Z
+  updatedAt: 2023-04-19T11:28:51.065Z
+  page: c2ec0d93-f0eb-493d-ae15-48e74e11f6ab
+- _id: 19b05552-f517-4612-aed8-85638efa3477
+  actionId: 5606848d-7c3d-4bfd-895a-3e5592ac9ddb
+  type: go-to-page
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 1536
+    y: 395
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: ""
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-19T11:28:46.585Z
+  updatedAt: 2023-04-19T11:28:46.585Z
+  page: fe132fb7-2a35-4e85-8e4d-8a3a006eb63e
+- _id: 952d4e7c-1b54-4ebc-9001-f588bf0505e4
+  actionId: 6c820bcd-1909-4a8d-8877-f28d8e21b54a
+  type: api-request
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 846
+    y: 138
+  nextActions:
+    - type: output
+      label: ""
+      value: true
+      actionId: c34109cf-71d4-4def-94b7-23e421dd11c0
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-19T09:32:43.559Z
+  updatedAt: 2023-04-19T09:32:43.559Z
+  requestData:
+    method: POST
+    url: "{{{envs.ACE_API_BASE_URL}}}/api/v1/getClientSumAssured"
+    body:
+      - key: clientId
+        value: "{{data.clientId}}"
+    headers:
+      - key: user-agent
+        value: "{{{envs.headersUserAgent}}}"
+      - key: authorization
+        value: "{{{data.token}}}"
+  label: get client sumAssured
+- _id: a59dc83e-7dff-43c6-a590-992160507f69
+  actionId: 71133932-3148-4837-b429-d277f5c667c6
+  type: go-to-page
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 314
+    y: 401
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: c5230938-73a8-4465-965c-ff57f92c9b73
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-11-25T04:56:32.667Z
+  updatedAt: 2022-11-25T04:56:32.667Z
+  page: ed269e86-742e-43dc-81f1-ef49003f8099
+- _id: 4e8fe5bd-7454-4c0b-a065-c1cbfce2f08b
+  actionId: 7604a7be-2925-4036-a87a-00faeb791868
+  type: variables-navigation
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 1030.2
+    y: 1227.22
+  nextActions:
+    - type: output
+      label: Default (else)
+      value: default
+      actionId: ""
+    - label: nextPage
+      condition:
+        rootId: 651e3b01-8836-4d5f-acb0-d0138013cb69
+        nodes:
+          651e3b01-8836-4d5f-acb0-d0138013cb69:
+            id: 651e3b01-8836-4d5f-acb0-d0138013cb69
+            type: condition
+            key: data.button
+            operator: eq
+            value: nextSumInsured
+      actionId: ""
+    - label: calculate Sum Assured
+      condition:
+        rootId: 2d8552ae-dd74-46bb-99c4-23636dbee33e
+        nodes:
+          2d8552ae-dd74-46bb-99c4-23636dbee33e:
+            id: 2d8552ae-dd74-46bb-99c4-23636dbee33e
+            type: condition
+            key: data.button
+            operator: eq
+            value: nextSumInsured
+      actionId: ""
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-01-16T05:09:08.310Z
+  updatedAt: 2023-01-16T05:09:08.310Z
+- _id: d8f2262f-1cfc-488a-9f0d-4ee3978cc4a8
+  actionId: 798b1c0a-aab0-4876-b6db-748d44b55fe2
+  type: save-variables
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 750.0855057351407
+    y: 465.17101147028154
+  nextActions:
+    - type: output
+      label: ""
+      value: ""
+      actionId: ddbad3fe-64b7-4fa1-b86c-2eb7dcfd9615
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-01-11T05:27:44.624Z
+  updatedAt: 2023-01-11T05:27:44.624Z
+  submissionData:
+    - key: user.calculate.calculatedSumAssured
+      value: "{{data.calculatedSumAssured}}"
+    - key: showerrorMsg
+      value: "false"
+  label: set calculated Sum Assured value
+- _id: 2c389403-b14a-4a03-b3c3-2bd58e179657
+  actionId: 7e129917-bdd4-41cd-9f3a-0cafe07d8522
+  type: variables-navigation
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 573.67
+    y: 765.74
+  nextActions:
+    - type: output
+      label: Default (else)
+      value: default
+      actionId: ba895f21-38dd-472f-b59e-e7f35c0d4820
+    - label: showError
+      condition:
+        rootId: da95687f-ef77-4722-be5d-293921a20fe3
+        nodes:
+          da95687f-ef77-4722-be5d-293921a20fe3:
+            id: da95687f-ef77-4722-be5d-293921a20fe3
+            type: condition
+            key: data.showerrorMsg
+            operator: eq
+            value: "true"
+      actionId: ddbad3fe-64b7-4fa1-b86c-2eb7dcfd9615
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-02-01T03:52:23.373Z
+  updatedAt: 2023-02-01T03:52:23.373Z
+  label: decide to show error
+- _id: b5d36e70-c55e-46d1-9e57-f7d3c12eed86
+  actionId: 8d736fc5-0022-407b-bbc9-f03a727f1de1
+  type: run-sync-subflow
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 1156.1702433071184
+    y: 539.494495308717
+  nextActions:
+    - type: output
+      label: Form flow done
+      value: ""
+      actionId: ""
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-03T11:53:02.876Z
+  updatedAt: 2023-04-03T11:53:02.876Z
+  flowId: 297f0b54-d950-4cde-a70a-f16a42b7a7bf
+  flowName: Full Quote
+- _id: 3a4cf00a-4374-457f-aefe-40aba2974ecd
+  actionId: 9759657a-6855-4793-a788-18afd6ef354a
+  type: variables-navigation
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 330.01043701171875
+    y: 930.0078125
+  nextActions:
+    - type: output
+      label: Default (else)
+      value: default
+      actionId: ""
+    - label: Whole life product
+      condition:
+        rootId: 4dec9283-7342-41cf-9816-82ddf892b6fa
+        nodes:
+          4dec9283-7342-41cf-9816-82ddf892b6fa:
+            id: 4dec9283-7342-41cf-9816-82ddf892b6fa
+            type: condition
+            key: data.product_no
+            operator: eq
+            value: "1"
+      actionId: 97f4b279-bced-4c1d-a1de-3a522049758b
+    - label: Term Life Product
+      condition:
+        rootId: 85d3c306-8c2e-4b3b-bf5b-f0ee316278ce
+        nodes:
+          85d3c306-8c2e-4b3b-bf5b-f0ee316278ce:
+            id: 85d3c306-8c2e-4b3b-bf5b-f0ee316278ce
+            type: condition
+            key: data.product_no
+            operator: eq
+            value: "2"
+      actionId: 120237f8-2f75-4f8f-bf8c-8902eaced713
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-13T09:15:17.073Z
+  updatedAt: 2023-04-13T09:15:17.073Z
+  label: choose product
+- _id: a6f6af0d-08a1-4676-b28c-1dc3e2ed7d94
+  actionId: 97f4b279-bced-4c1d-a1de-3a522049758b
+  type: api-request
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 306.9702097162781
+    y: 1028.0347203867673
+  nextActions:
+    - type: output
+      label: ""
+      value: true
+      actionId: 3495a894-6eb1-4892-ac99-58eb4c369717
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-11-30T13:15:18.828Z
+  updatedAt: 2022-11-30T13:15:18.828Z
+  requestData:
+    method: POST
+    body:
+      - key: dateOfBirth
+        value: "{{data.dateOfBirth}}"
+      - key: sumInsured
+        value: "{{data.sumInsured}}"
+      - key: smoker
+        value: "{{data.smoker}}"
+      - key: gender
+        value: "{{data.gender}}"
+      - key: premiumAge65
+        value: "65"
+      - key: product
+        value: "{{data.product_no}}"
+      - key: premiumAge75
+        value: "75"
+      - key: premiumAge100
+        value: "100"
+      - key: calculatedSumInsured
+        value: "{{data.customSum}}"
+    url: "{{{envs.ACE_API_BASE_URL}}}/v1/createAnonymousQuote"
+    headers:
+      - key: user-agent
+        value: "{{{envs.headersUserAgent}}}"
+      - key: authorization
+        value: "{{{data.token}}}"
+  label: whole life-getMonthlyPremiums
+- _id: 5ffc39d8-74a6-446d-87c7-9c05238a8a3d
+  actionId: a9a1aad1-414c-4c8a-86a0-d67d6c71b62b
+  type: variables-navigation
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 271.66561773461035
+    y: 649.382953062249
+  nextActions:
+    - type: output
+      label: Default (else)
+      value: default
+      actionId: 41a2fb4e-9d3a-467a-999a-89cf91521ae4
+    - label: nextPage
+      condition:
+        rootId: f9682e42-3091-4af7-88d6-e7e9ac508b3f
+        nodes:
+          afa4a9ef-d51c-4f3d-8148-5f4b03e683c6:
+            id: afa4a9ef-d51c-4f3d-8148-5f4b03e683c6
+            type: condition
+            key: data.button
+            operator: eq
+            value: nextSumInsured
+          f9682e42-3091-4af7-88d6-e7e9ac508b3f:
+            id: f9682e42-3091-4af7-88d6-e7e9ac508b3f
+            type: group
+            operator: and
+            children:
+              - afa4a9ef-d51c-4f3d-8148-5f4b03e683c6
+      actionId: dd90c5a6-e622-4e6d-ade5-900ae88d3a02
+    - label: validateApi
+      condition:
+        rootId: e3febfe8-9d99-4c43-924d-8c147a40f885
+        nodes:
+          e3febfe8-9d99-4c43-924d-8c147a40f885:
+            id: e3febfe8-9d99-4c43-924d-8c147a40f885
+            type: condition
+            key: data.button
+            operator: eq
+            value: validateAPI
+      actionId: ""
+    - label: calculate Sum Assured
+      condition:
+        rootId: 63c0236f-bb70-4e48-aa2c-b03d46ee8f71
+        nodes:
+          63c0236f-bb70-4e48-aa2c-b03d46ee8f71:
+            id: 63c0236f-bb70-4e48-aa2c-b03d46ee8f71
+            type: condition
+            key: data.button
+            operator: eq
+            value: calculateSumAssured
+      actionId: be289846-31aa-4d2e-9919-e8ebcde3c00f
+    - label: previousPage
+      condition:
+        rootId: 865f05d8-080e-4588-a20c-6034db4011cf
+        nodes:
+          865f05d8-080e-4588-a20c-6034db4011cf:
+            id: 865f05d8-080e-4588-a20c-6034db4011cf
+            type: condition
+            key: data.button
+            operator: eq
+            value: previousSumInsured
+      actionId: 71133932-3148-4837-b429-d277f5c667c6
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-11-25T08:34:59.135Z
+  updatedAt: 2022-11-25T08:34:59.135Z
+  label: Navigation
+- _id: d71874e9-c87b-4946-ad44-b528f14bf161
+  actionId: ba895f21-38dd-472f-b59e-e7f35c0d4820
+  type: save-variables
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 568.67
+    y: 845.74
+  nextActions:
+    - type: output
+      label: ""
+      value: ""
+      actionId: 9759657a-6855-4793-a788-18afd6ef354a
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-02-01T03:56:30.960Z
+  updatedAt: 2023-02-01T03:56:30.960Z
+  submissionData:
+    - key: customSum
+      value: "{{data.calculatedSA}}"
+- _id: 84ebebab-a4e7-447b-b67a-24cebe8ac5a8
+  actionId: ba962f52-36ab-4992-9212-2386240aa7da
+  type: run-sync-subflow
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 423.64697022361224
+    y: 1584.0134399258504
+  nextActions:
+    - type: output
+      label: Form flow done
+      value: ""
+      actionId: ""
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-11-25T05:45:27.648Z
+  updatedAt: 2022-11-25T05:45:27.648Z
+  flowId: 297f0b54-d950-4cde-a70a-f16a42b7a7bf
+  flowName: Full Quote
+- _id: ccd7028c-ace8-48fb-9c9f-c3566164a5ca
+  actionId: be289846-31aa-4d2e-9919-e8ebcde3c00f
+  type: api-request
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 744.3160083160083
+    y: 386.03950103950103
+  nextActions:
+    - type: output
+      label: ""
+      value: true
+      actionId: 798b1c0a-aab0-4876-b6db-748d44b55fe2
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-01-10T12:29:50.039Z
+  updatedAt: 2023-01-10T12:29:50.039Z
+  requestData:
+    method: POST
+    url: "{{{envs.ACE_API_BASE_URL}}}/v1/calculateSumAssured"
+    body:
+      - key: userInputs
+        value: "{{{data.user.calculate}}}"
+      - key: premiumAge100
+        value: "100"
+      - key: age
+        value: "{{data.age}}"
+      - key: dateOfBirth
+        value: "{{data.dateOfBirth}}"
+      - key: sumInsured
+        value: "200000"
+      - key: smoker
+        value: "{{data.smoker}}"
+      - key: gender
+        value: "{{data.gender}}"
+      - key: product
+        value: "{{data.product_no}}"
+    headers:
+      - key: user-agent
+        value: "{{{envs.headersUserAgent}}}"
+      - key: authorization
+        value: "{{{data.token}}}"
+  label: calculate sum Assured
+- _id: d02e80da-93c0-4ed7-a10e-259cd1c0b7c9
+  actionId: bf670298-8b55-4e84-a68e-836ae266ac77
+  type: variables-navigation
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 305.01043701171875
+    y: 1350.0078125
+  nextActions:
+    - type: output
+      label: Default (else)
+      value: default
+      actionId: ""
+    - label: startover
+      condition:
+        rootId: d785a55e-f0ac-4422-a3e8-5c6cb770e011
+        nodes:
+          d785a55e-f0ac-4422-a3e8-5c6cb770e011:
+            id: d785a55e-f0ac-4422-a3e8-5c6cb770e011
+            type: condition
+            key: data.button
+            operator: eq
+            value: start
+      actionId: 1125a5ee-4ccc-4fcd-8cdc-79bfcbfef616
+    - label: next journey
+      condition:
+        rootId: d959843a-925b-4027-b85d-ad2e4b980e89
+        nodes:
+          d959843a-925b-4027-b85d-ad2e4b980e89:
+            id: d959843a-925b-4027-b85d-ad2e4b980e89
+            type: condition
+            key: data.button
+            operator: eq
+            value: nextJourney
+      actionId: 122293ed-600d-43df-8041-146dc46059c3
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-27T05:03:17.125Z
+  updatedAt: 2023-04-27T05:03:17.125Z
+  label: navigation
+- _id: 7f1d3ccd-d2c5-43a4-b680-eeb5eac9300c
+  actionId: c1d57389-dfcf-4c5a-afd4-807a8bf8835f
+  type: save-variables
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 795.4285714285713
+    y: 28.66666666666663
+  nextActions:
+    - type: output
+      label: ""
+      value: ""
+      actionId: 6c820bcd-1909-4a8d-8877-f28d8e21b54a
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-25T05:42:50.428Z
+  updatedAt: 2023-04-25T05:42:50.428Z
+  submissionData:
+    - key: clientId
+      value: "{{data.clientId}}"
+- _id: dac27e4b-f8f5-44f8-852d-8f9c5dc1ee8b
+  actionId: c34109cf-71d4-4def-94b7-23e421dd11c0
+  type: go-to-page
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 1130.0104370117188
+    y: 249.0078125
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: 3d700508-b6ce-444b-9555-7c5d9dcbfbe7
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-03T11:52:53.688Z
+  updatedAt: 2023-04-03T11:52:53.688Z
+  page: 3c4e814e-c664-4273-9905-b5afcaf2f6e5
+- _id: 10893aab-ca66-42a0-b11f-6bebe5ea0b4c
+  actionId: c5230938-73a8-4465-965c-ff57f92c9b73
+  type: variables-navigation
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 312
+    y: 496
+  nextActions:
+    - type: output
+      label: Default (else)
+      value: default
+      actionId: ""
+    - label: go to next page
+      condition:
+        rootId: 90a44676-5b6b-4303-acf0-93240cb8e550
+        nodes:
+          90a44676-5b6b-4303-acf0-93240cb8e550:
+            id: 90a44676-5b6b-4303-acf0-93240cb8e550
+            type: condition
+            key: data.button
+            operator: eq
+            value: nextBtnSmoke
+      actionId: 41a2fb4e-9d3a-467a-999a-89cf91521ae4
+    - label: go to previous page
+      condition:
+        rootId: ee230315-384a-43c5-8fd7-487b0ae021a1
+        nodes:
+          ee230315-384a-43c5-8fd7-487b0ae021a1:
+            id: ee230315-384a-43c5-8fd7-487b0ae021a1
+            type: condition
+            key: data.button
+            operator: eq
+            value: previousBtnSmoke
+      actionId: cf8f4ecb-0683-4b61-8939-05cc399c513a
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-02-02T04:14:13.214Z
+  updatedAt: 2023-02-02T04:14:13.214Z
+  label: redirection
+- _id: 7e35e298-b43f-43ef-812a-a199ff85bf0b
+  actionId: cf8f4ecb-0683-4b61-8939-05cc399c513a
+  type: go-to-page
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 344
+    y: 260
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: f2b21faf-ebf9-4de9-babb-6379eabddd50
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-11-25T04:56:24.373Z
+  updatedAt: 2022-11-25T04:56:24.373Z
+  page: d2649f3b-4c5e-4ff9-8a59-6eeb1980b169
+- _id: 284e6750-e4a6-4a64-9cbf-5d776265fca3
+  actionId: cfedc918-ba00-4a26-890a-85ea7e090ffd
+  type: variables-navigation
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 545.0104370117188
+    y: 310.0078125
+  nextActions:
+    - type: output
+      label: Default (else)
+      value: default
+      actionId: cf8f4ecb-0683-4b61-8939-05cc399c513a
+    - label: next Page
+      condition:
+        rootId: c3e7e82c-f24e-48e6-afb5-41b2682b33fe
+        nodes:
+          c3e7e82c-f24e-48e6-afb5-41b2682b33fe:
+            id: c3e7e82c-f24e-48e6-afb5-41b2682b33fe
+            type: group
+            operator: and
+            children:
+              - fbe5b653-e8f3-43fb-9967-b52ed5dde586
+              - 6a05afdf-4a89-48ba-8c57-28c063903030
+          fbe5b653-e8f3-43fb-9967-b52ed5dde586:
+            id: fbe5b653-e8f3-43fb-9967-b52ed5dde586
+            type: condition
+            key: data.isAgeApplicable
+            operator: eq
+            value: "true"
+          6a05afdf-4a89-48ba-8c57-28c063903030:
+            id: 6a05afdf-4a89-48ba-8c57-28c063903030
+            type: condition
+            key: data.button
+            operator: eq
+            value: Nextdob
+      actionId: 71133932-3148-4837-b429-d277f5c667c6
+    - label: validation failed
+      condition:
+        rootId: 691010ca-25b9-4072-b04b-ff680b9a3028
+        nodes:
+          691010ca-25b9-4072-b04b-ff680b9a3028:
+            id: 691010ca-25b9-4072-b04b-ff680b9a3028
+            type: group
+            operator: and
+            children:
+              - e85e04cd-24d4-4266-8b2c-48f3a4b27ef2
+              - 44fe18a5-ef69-4321-9aa6-b2375285be3f
+          e85e04cd-24d4-4266-8b2c-48f3a4b27ef2:
+            id: e85e04cd-24d4-4266-8b2c-48f3a4b27ef2
+            type: condition
+            key: data.isAgeApplicable
+            operator: eq
+            value: "false"
+          44fe18a5-ef69-4321-9aa6-b2375285be3f:
+            id: 44fe18a5-ef69-4321-9aa6-b2375285be3f
+            type: condition
+            key: data.button
+            operator: eq
+            value: Nextdob
+      actionId: cf8f4ecb-0683-4b61-8939-05cc399c513a
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-11-25T06:36:24.682Z
+  updatedAt: 2022-11-25T06:36:24.682Z
+  label: ""
+- _id: f89c7515-a16f-4853-9bbc-ffd129e4f1c6
+  actionId: d3f03dc8-7cd6-4232-9713-4d836a0fc724
+  type: variables-navigation
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 633
+    y: 608
+  nextActions:
+    - type: output
+      label: Default (else)
+      value: default
+      actionId: ""
+    - label: next with validation
+      condition:
+        rootId: fa35599c-7904-4c64-afc0-9c41b86a4606
+        nodes:
+          d1bc2fbe-9bf1-49b0-98f7-dd3cbac40478:
+            id: d1bc2fbe-9bf1-49b0-98f7-dd3cbac40478
+            type: condition
+            key: data.button
+            operator: eq
+            value: nextPopup
+          fa35599c-7904-4c64-afc0-9c41b86a4606:
+            id: fa35599c-7904-4c64-afc0-9c41b86a4606
+            type: group
+            operator: and
+            children:
+              - d1bc2fbe-9bf1-49b0-98f7-dd3cbac40478
+              - 4598fbb9-537d-4b70-a8a0-87393857994b
+          4598fbb9-537d-4b70-a8a0-87393857994b:
+            id: 4598fbb9-537d-4b70-a8a0-87393857994b
+            type: condition
+            key: data.clickHereClicked
+            operator: eq
+            value: "1"
+      actionId: 332a818f-311d-4364-8b81-66d1c0810d6f
+    - label: next without validation
+      condition:
+        rootId: 047f2d14-bbe7-4df1-8544-4fd0e22b78b0
+        nodes:
+          e9464f6a-1ed4-46f0-84f6-76d1af3557fa:
+            id: e9464f6a-1ed4-46f0-84f6-76d1af3557fa
+            type: condition
+            key: data.button
+            operator: eq
+            value: nextPopup
+          047f2d14-bbe7-4df1-8544-4fd0e22b78b0:
+            id: 047f2d14-bbe7-4df1-8544-4fd0e22b78b0
+            type: group
+            operator: and
+            children:
+              - e9464f6a-1ed4-46f0-84f6-76d1af3557fa
+              - fbd7ab2f-c9e1-4bfd-af41-bb367f34e8aa
+          fbd7ab2f-c9e1-4bfd-af41-bb367f34e8aa:
+            id: fbd7ab2f-c9e1-4bfd-af41-bb367f34e8aa
+            type: condition
+            key: data.clickHereClicked
+            operator: neq
+            value: "1"
+      actionId: 34b99216-567b-49da-932d-db1efb75d449
+    - label: back page
+      condition:
+        rootId: a43b6fce-d5a3-435c-ab73-8b25f34425d4
+        nodes:
+          a43b6fce-d5a3-435c-ab73-8b25f34425d4:
+            id: a43b6fce-d5a3-435c-ab73-8b25f34425d4
+            type: condition
+            key: data.button
+            operator: eq
+            value: cancelPopup
+      actionId: e9802363-9462-4959-980d-493b6e6c7e1e
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-02-01T03:38:51.725Z
+  updatedAt: 2023-02-01T03:38:51.725Z
+  label: navigation
+- _id: c7f9e661-3e95-4a3c-b270-db06989e0fe6
+  actionId: dd90c5a6-e622-4e6d-ade5-900ae88d3a02
+  type: api-request
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 333.76648690776864
+    y: 737.9917833939708
+  nextActions:
+    - type: output
+      label: ""
+      value: true
+      actionId: fca0e374-35e8-4a89-87ff-a236669a5cc5
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2022-11-25T08:33:30.838Z
+  updatedAt: 2022-11-25T08:33:30.838Z
+  label: getSumInsuredErrorMsg
+  requestData:
+    method: POST
+    url: "{{{envs.ACE_API_BASE_URL}}}/v1/validateSumInsured"
+    body:
+      - key: sum
+        value: "{{data.sumInsured}}"
+      - key: age
+        value: "{{data.age}}"
+      - key: clientExists
+        value: "false"
+      - key: previousSum
+        value: "0"
+      - key: suggestingSumAssured
+        value: "{{data.suggestingSumAssured}}"
+    headers:
+      - key: user-agent
+        value: "{{{envs.headersUserAgent}}}"
+      - key: authorization
+        value: "{{{data.token}}}"
+- _id: e5511fb6-62f5-4438-856d-1c8e76323648
+  actionId: ddbad3fe-64b7-4fa1-b86c-2eb7dcfd9615
+  type: go-to-page
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 754
+    y: 542
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: d3f03dc8-7cd6-4232-9713-4d836a0fc724
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-02-01T03:01:43.672Z
+  updatedAt: 2023-02-01T03:01:43.672Z
+  page: cd1b5821-88a8-4c67-a4c4-e42b7e28f858
+- _id: 9591e034-690d-4998-bf50-0f5042aa603b
+  actionId: e9802363-9462-4959-980d-493b6e6c7e1e
+  type: save-variables
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 819
+    y: 687
+  nextActions:
+    - type: output
+      label: ""
+      value: ""
+      actionId: 41a2fb4e-9d3a-467a-999a-89cf91521ae4
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-02-01T05:12:04.311Z
+  updatedAt: 2023-02-01T05:12:04.311Z
+  submissionData:
+    - key: enableCalculate
+      value: "true"
+- _id: 056caba6-3c09-4a25-b570-652c0c6f243c
+  actionId: f2b21faf-ebf9-4de9-babb-6379eabddd50
+  type: variables-navigation
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 351
+    y: 198
+  nextActions:
+    - type: output
+      label: Default (else)
+      value: default
+      actionId: ""
+    - label: next page
+      condition:
+        rootId: f29250dc-7007-4ab7-af45-e1677fefaf83
+        nodes:
+          f29250dc-7007-4ab7-af45-e1677fefaf83:
+            id: f29250dc-7007-4ab7-af45-e1677fefaf83
+            type: condition
+            key: data.button
+            operator: eq
+            value: Nextdob
+      actionId: 00b76643-e527-47db-8351-a2d99166a753
+    - label: previous page
+      condition:
+        rootId: b8a24c45-6f70-4cce-86c9-ee8ba7f65af9
+        nodes:
+          b8a24c45-6f70-4cce-86c9-ee8ba7f65af9:
+            id: b8a24c45-6f70-4cce-86c9-ee8ba7f65af9
+            type: condition
+            key: data.button
+            operator: eq
+            value: previousdob
+      actionId: 1125a5ee-4ccc-4fcd-8cdc-79bfcbfef616
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-02-02T04:24:32.504Z
+  updatedAt: 2023-02-02T04:24:32.504Z
+- _id: 794aab8f-a72e-487f-8fed-c67da325290c
+  actionId: fc54e33b-7fc6-40e7-a768-f66b0ffd4c87
+  type: save-variables
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 615.0104370117188
+    y: 1177.0078125
+  nextActions:
+    - type: output
+      label: ""
+      value: ""
+      actionId: 16f109fc-0880-417e-b752-131965abe907
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-04-13T09:17:42.284Z
+  updatedAt: 2023-04-13T09:17:42.284Z
+  label: set monthly premium 100
+  submissionData:
+    - key: monthlyPremium100
+      value: "{{data.monthlyPremium100}}"
+- _id: ad5fa526-48bc-4e6d-8bb0-d942462dd4af
+  actionId: fca0e374-35e8-4a89-87ff-a236669a5cc5
+  type: variables-navigation
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  position:
+    x: 199
+    y: 799
+  nextActions:
+    - type: output
+      label: Default (else)
+      value: default
+      actionId: 9759657a-6855-4793-a788-18afd6ef354a
+    - label: showError
+      condition:
+        rootId: 5394d719-248d-495c-a4a8-8a2bd0a353a9
+        nodes:
+          5394d719-248d-495c-a4a8-8a2bd0a353a9:
+            id: 5394d719-248d-495c-a4a8-8a2bd0a353a9
+            type: condition
+            key: data.showerrorMsg
+            operator: eq
+            value: "true"
+      actionId: 41a2fb4e-9d3a-467a-999a-89cf91521ae4
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  createdAt: 2023-01-16T05:03:34.252Z
+  updatedAt: 2023-01-16T05:03:34.252Z
+  label: decide to show error

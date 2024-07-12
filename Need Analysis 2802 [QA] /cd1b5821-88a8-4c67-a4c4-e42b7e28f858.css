@@ -1,0 +1,51 @@
+
+.pq-dialog-main {
+  /*margin-top:150px;*/
+  width: 100% !important;
+  max-width:440px !important;
+  padding: 0 0rem;
+  overflow-y: inherit;
+  cursor: default;
+  overflow-x: hidden
+}
+&{
+  padding: 0px !important;
+}
+
+.p0 {
+  padding: 0rem;
+}
+
+.m0 {
+  margin: 0rem;
+}
+
+.pt0 {
+ padding-top: 0rem; 
+}
+
+.pl0 {
+ padding-left: 0rem; 
+}
+
+.pb0 {
+  padding-bottom: 0rem;
+}
+
+.mb0{
+  margin-bottom:0rem;
+}
+
+.mt0{
+  margin-top:0rem;
+}
+
+.my0{
+  margin-top:0rem;
+  margin-bottom:0rem;
+}
+
+.mb1{
+  margin-bottom: 1rem !important;
+  padding-bottom: 1rem !important;
+}

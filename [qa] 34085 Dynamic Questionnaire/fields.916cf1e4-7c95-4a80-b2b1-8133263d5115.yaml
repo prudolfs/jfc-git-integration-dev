@@ -1,0 +1,82 @@
+- _id: 87b66309-f8f2-4e4e-b2eb-7f03f4545b7e
+  fieldId: 27eaa1a6-1c91-459a-8c89-161e2a720c8c
+  form: 916cf1e4-7c95-4a80-b2b1-8133263d5115
+  components:
+    - 0c0c000c-dc5d-4a6d-affb-478dcf52a779
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  type: panel
+  isDialog: false
+  label: P1
+  width: 730
+  createdAt: 2024-07-08T11:56:04.921Z
+- _id: 71a3ac7f-9d0c-4976-9bfd-268a043c815d
+  fieldId: 0c0c000c-dc5d-4a6d-affb-478dcf52a779
+  form: 916cf1e4-7c95-4a80-b2b1-8133263d5115
+  components:
+    - 5c1a49e3-42d2-4232-91c3-40681caa625f
+  pageId: 27eaa1a6-1c91-459a-8c89-161e2a720c8c
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  key: section-952
+  type: section
+  parentId: 27eaa1a6-1c91-459a-8c89-161e2a720c8c
+  innerSection: false
+  createdAt: 2024-07-08T12:32:15.523Z
+- _id: 30bfc82a-3077-4450-9475-ed66f72650f5
+  fieldId: 5c1a49e3-42d2-4232-91c3-40681caa625f
+  form: 916cf1e4-7c95-4a80-b2b1-8133263d5115
+  components:
+    - 1e7c2e9e-105e-4e81-992b-d71d01d1c0cd
+  pageId: 27eaa1a6-1c91-459a-8c89-161e2a720c8c
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  type: column
+  key: column-746
+  parentId: 0c0c000c-dc5d-4a6d-affb-478dcf52a779
+  responsiveWidth:
+    xs: 12
+    sm: 12
+    md: 12
+  createdAt: 2024-07-08T12:32:15.524Z
+- _id: 286a2f35-e55b-46ae-a556-089e4a0601ee
+  fieldId: 1e7c2e9e-105e-4e81-992b-d71d01d1c0cd
+  form: 916cf1e4-7c95-4a80-b2b1-8133263d5115
+  components: []
+  pageId: 27eaa1a6-1c91-459a-8c89-161e2a720c8c
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  key: dynamicQuestionnaire-980
+  type: dynamicQuestionnaire
+  parentId: 5c1a49e3-42d2-4232-91c3-40681caa625f
+  innerSection: true
+  createdAt: 2024-07-08T12:32:29.255Z
+  selectHeadersBlock:
+    - id: 929030bd-0b16-4514-91fe-448c81f7c98f
+      key: ""
+      value: ""
+  dataSource: https://sapiens.free.beeceptor.com/questionnaire

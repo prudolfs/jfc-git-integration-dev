@@ -1,0 +1,286 @@
+- _id: c1b6c538-13c7-4520-944d-ffa447d3dab7
+  innerSection: false
+  parentId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  type: section
+  key: section-223
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  pageId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  components:
+    - 4e1ee517-9e94-4b2c-9462-84509e348ae1
+  form: 930ec785-c596-49e2-94f6-5ecf142aa1fb
+  createdAt: 2024-07-04T12:13:37.955Z
+  fieldId: bfd76a91-5ea9-440a-a06f-1b3504cb292e
+- _id: 764cbe37-fdb8-4a52-a98a-f160bca0a7eb
+  imageAsset:
+    _id: 0e62a26c-bde2-453f-a1ed-b250e4714e02
+    fileName: Image.png
+    path: https://dig-jfc-cnt-test101-assets.sapiens.com/assets/0e62a26c-bde2-453f-a1ed-b250e4714e02
+    type: image/png
+  buttonShadow:
+    checked: false
+    horizontalShadow: 0
+    verticalShadow: 3
+    blurRadius: 5
+    spreadRadius: 3
+    shadowColor: "#00283b"
+    shadowOpacity: 0.2
+  imageSize:
+    height: 24
+    width: 24
+  buttonSize:
+    checked: false
+    fontSize: 14
+    height: 36
+    width: 75
+  buttonBorderRadius: "4"
+  btnVariant: contained
+  action: submit
+  iconPosition: left
+  label: Button
+  horizontalAlign: flex-start
+  innerSection: true
+  parentId: 4e1ee517-9e94-4b2c-9462-84509e348ae1
+  type: button
+  key: button-709
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  pageId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  components: []
+  form: 930ec785-c596-49e2-94f6-5ecf142aa1fb
+  createdAt: 2024-07-04T12:13:41.526Z
+  fieldId: 478696e7-b7bc-42df-a3be-b86feb270ca1
+- _id: 214cfcd7-bf0c-4beb-8f5e-447e0a30d7fa
+  innerSection: false
+  parentId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  type: section
+  key: section-243
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  pageId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  components:
+    - 75281d58-bc24-487d-994e-e2d5318c7973
+  form: 930ec785-c596-49e2-94f6-5ecf142aa1fb
+  createdAt: 2024-07-04T12:15:18.535Z
+  fieldId: 926b507d-4dae-4019-9c58-454577a886d0
+- _id: c5ee5752-4a06-45e1-a913-b870798ad9f9
+  responsiveWidth:
+    xs: 12
+    sm: 12
+    md: 12
+  parentId: 926b507d-4dae-4019-9c58-454577a886d0
+  key: column-593
+  type: column
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  pageId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  components:
+    - d5d34e32-8ec1-4887-a013-1f99b3694957
+  form: 930ec785-c596-49e2-94f6-5ecf142aa1fb
+  createdAt: 2024-07-04T12:15:18.536Z
+  fieldId: 75281d58-bc24-487d-994e-e2d5318c7973
+- _id: dfa7e945-fc42-4dae-b404-528774b66806
+  width: 730
+  label: View-703
+  isDialog: false
+  type: panel
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  components:
+    - bfd76a91-5ea9-440a-a06f-1b3504cb292e
+    - 926b507d-4dae-4019-9c58-454577a886d0
+    - 672e9371-39a7-4bbf-870d-9d2ec73eeb27
+  form: 930ec785-c596-49e2-94f6-5ecf142aa1fb
+  createdAt: 2024-07-04T12:13:29.814Z
+  fieldId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+- _id: baa88093-792d-4a82-875d-e3d743ce8e84
+  imageUrl: https://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back05.jpg
+  imageSize:
+    height: "100"
+    width: "100"
+  innerSection: true
+  parentId: 75281d58-bc24-487d-994e-e2d5318c7973
+  type: image
+  key: image-749
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  pageId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  components: []
+  form: 930ec785-c596-49e2-94f6-5ecf142aa1fb
+  createdAt: 2024-07-04T12:15:24.579Z
+  fieldId: d5d34e32-8ec1-4887-a013-1f99b3694957
+- _id: a5142b0d-9acf-4e35-93ab-0ecfa8d5ab64
+  responsiveWidth:
+    xs: 12
+    sm: 12
+    md: 12
+  parentId: bfd76a91-5ea9-440a-a06f-1b3504cb292e
+  key: column-450
+  type: column
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  pageId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  components:
+    - 478696e7-b7bc-42df-a3be-b86feb270ca1
+  form: 930ec785-c596-49e2-94f6-5ecf142aa1fb
+  createdAt: 2024-07-04T12:13:37.956Z
+  fieldId: 4e1ee517-9e94-4b2c-9462-84509e348ae1
+- _id: f39b02ad-9565-411b-a0ba-77eec917a8ec
+  padding: {}
+  margin: {}
+  buttonShadow:
+    horizontalShadow: 0
+    verticalShadow: 3
+    spreadRadius: 3
+    shadowColor: "#00283b"
+    blurRadius: 5
+    shadowOpacity: 0.2
+  createdAt: 2024-07-04T13:09:02.919Z
+  innerSection: false
+  parentId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  type: section
+  key: section-845
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  pageId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  components:
+    - 95e87d98-4af3-48fb-820c-48fc53b94049
+    - 908331b7-90ef-4cec-a94b-0f83d918d72a
+  form: 930ec785-c596-49e2-94f6-5ecf142aa1fb
+  fieldId: 672e9371-39a7-4bbf-870d-9d2ec73eeb27
+- _id: 3eb7435a-80a5-4224-8f88-047c752752bf
+  createdAt: 2024-07-04T13:09:02.919Z
+  responsiveWidth:
+    xs: 12
+    sm: 12
+    md: 12
+  parentId: 672e9371-39a7-4bbf-870d-9d2ec73eeb27
+  key: column-546
+  type: column
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  pageId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  components: []
+  form: 930ec785-c596-49e2-94f6-5ecf142aa1fb
+  fieldId: 95e87d98-4af3-48fb-820c-48fc53b94049
+- _id: 77e28620-b9bb-4b56-8ef0-dc2272de73b0
+  responsiveWidth:
+    xs: 12
+    sm: 12
+    md: 12
+  parentId: 672e9371-39a7-4bbf-870d-9d2ec73eeb27
+  key: column-389
+  type: column
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  pageId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  components:
+    - ceaaab61-420e-4077-a773-2005cfc543e9
+  form: 930ec785-c596-49e2-94f6-5ecf142aa1fb
+  createdAt: 2024-07-04T12:13:37.956Z
+  fieldId: 908331b7-90ef-4cec-a94b-0f83d918d72a
+- _id: 7d78621c-53ec-4930-bffb-8053820e90d5
+  imageAsset:
+    _id: 98fff10e-80f9-4e5d-9c73-f61e136d6d54
+    fileName: WhatsApp Image 2024-07-02 at 12.37.31 PM.jpeg
+    path: https://dig-jfc-cnt-test101-assets.sapiens.com/assets/98fff10e-80f9-4e5d-9c73-f61e136d6d54
+    type: image/jpeg
+  buttonShadow:
+    checked: false
+    horizontalShadow: 0
+    verticalShadow: 3
+    blurRadius: 5
+    spreadRadius: 3
+    shadowColor: "#00283b"
+    shadowOpacity: 0.2
+  imageSize:
+    height: 24
+    width: 24
+  buttonSize:
+    checked: false
+    fontSize: 14
+    height: 36
+    width: 75
+  buttonBorderRadius: "4"
+  btnVariant: contained
+  action: submit
+  iconPosition: left
+  label: Button
+  horizontalAlign: flex-start
+  innerSection: true
+  parentId: 908331b7-90ef-4cec-a94b-0f83d918d72a
+  type: button
+  key: button-299
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  pageId: 655915fa-87f4-4e98-8e0a-973da4ba5754
+  components: []
+  form: 930ec785-c596-49e2-94f6-5ecf142aa1fb
+  createdAt: 2024-07-04T12:13:41.526Z
+  fieldId: ceaaab61-420e-4077-a773-2005cfc543e9

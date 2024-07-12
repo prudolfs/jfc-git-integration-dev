@@ -1,0 +1,235 @@
+- _id: 4bb5dd80-328a-49d1-887b-690cd742c4e2
+  fieldId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  form: a76c1814-238d-41b0-ba9f-0cd912ca8671
+  components:
+    - 98a02d50-570d-464b-84dd-cb5d556b3dba
+    - 5caa9d58-2315-4dc4-9428-906f84682042
+    - a6af5216-5aff-4443-a0ce-d3826a1aca8d
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  type: panel
+  isDialog: false
+  label: View-705
+  width: 730
+  createdAt: 2024-07-11T12:45:01.764Z
+- _id: 8566b128-1a1d-4c98-87f5-ba6a8f1f9a98
+  fieldId: 98a02d50-570d-464b-84dd-cb5d556b3dba
+  form: a76c1814-238d-41b0-ba9f-0cd912ca8671
+  components:
+    - 771c9abe-2fa9-4923-b39f-f1681dc97ed2
+  pageId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  key: section-820
+  type: section
+  parentId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  innerSection: false
+  createdAt: 2024-07-11T12:45:05.889Z
+- _id: 8aec021b-ac3b-4152-8602-d0d693075058
+  fieldId: 771c9abe-2fa9-4923-b39f-f1681dc97ed2
+  form: a76c1814-238d-41b0-ba9f-0cd912ca8671
+  components:
+    - c293102b-aa76-4c4d-b303-4e0aec29f25c
+  pageId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  type: column
+  key: column-578
+  parentId: 98a02d50-570d-464b-84dd-cb5d556b3dba
+  responsiveWidth:
+    xs: 12
+    sm: 12
+    md: 12
+  createdAt: 2024-07-11T12:45:05.889Z
+- _id: 4de28605-2844-485d-8d5a-495db67c25de
+  fieldId: c293102b-aa76-4c4d-b303-4e0aec29f25c
+  form: a76c1814-238d-41b0-ba9f-0cd912ca8671
+  components: []
+  pageId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  key: content-724
+  type: content
+  parentId: 771c9abe-2fa9-4923-b39f-f1681dc97ed2
+  innerSection: true
+  fontColor: text-primary
+  fontSize: 16
+  fixedFontSize: false
+  createdAt: 2024-07-11T12:45:13.398Z
+  iconSize: {}
+  iconPadding: {}
+  content:
+    options: []
+    default: <h1>Welcome to git Integration</h1>
+- _id: dde8c733-610d-49d7-8ecb-643e545d9369
+  fieldId: 5caa9d58-2315-4dc4-9428-906f84682042
+  form: a76c1814-238d-41b0-ba9f-0cd912ca8671
+  components:
+    - 962b587e-2719-4033-a360-f0522f8fb50b
+  pageId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  key: section-906
+  type: section
+  parentId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  innerSection: false
+  createdAt: 2024-07-11T12:53:30.664Z
+- _id: b81457d3-9a7f-41dd-bf7c-3a4e56cf298f
+  fieldId: 962b587e-2719-4033-a360-f0522f8fb50b
+  form: a76c1814-238d-41b0-ba9f-0cd912ca8671
+  components:
+    - b061cffb-9e5b-4df0-b7fa-7f58a59bc196
+  pageId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  type: column
+  key: column-789
+  parentId: 5caa9d58-2315-4dc4-9428-906f84682042
+  responsiveWidth:
+    xs: 12
+    sm: 12
+    md: 12
+  createdAt: 2024-07-11T12:53:30.665Z
+- _id: 8ce578f1-f3a8-41f8-a278-b1f8bc8aa63f
+  fieldId: b061cffb-9e5b-4df0-b7fa-7f58a59bc196
+  form: a76c1814-238d-41b0-ba9f-0cd912ca8671
+  components: []
+  pageId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  key: image-574
+  type: image
+  parentId: 962b587e-2719-4033-a360-f0522f8fb50b
+  innerSection: true
+  imageSize:
+    height: "100"
+    width: "100"
+  createdAt: 2024-07-11T12:53:43.480Z
+  imageAsset:
+    _id: 6e1fb74a-3447-4aeb-aed6-4d7670155aba
+    fileName: save icon.jpg
+    path: https://dig-jfc-cnt-test101-assets.sapiens.com/assets/6e1fb74a-3447-4aeb-aed6-4d7670155aba
+    type: image/jpeg
+- _id: 48b74132-c89f-4504-8514-e47e9fb88e81
+  fieldId: a6af5216-5aff-4443-a0ce-d3826a1aca8d
+  form: a76c1814-238d-41b0-ba9f-0cd912ca8671
+  components:
+    - 9e69ac39-2319-4b65-be61-e1548c1fe93b
+  pageId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  key: section-355
+  type: section
+  parentId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  innerSection: false
+  createdAt: 2024-07-11T12:53:50.446Z
+- _id: 1cd7d7fa-9393-4eee-a184-4b2d68dfdee9
+  fieldId: 9e69ac39-2319-4b65-be61-e1548c1fe93b
+  form: a76c1814-238d-41b0-ba9f-0cd912ca8671
+  components:
+    - 6d55b8d2-c445-4dfc-b506-d32c8066e0eb
+  pageId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  type: column
+  key: column-551
+  parentId: a6af5216-5aff-4443-a0ce-d3826a1aca8d
+  responsiveWidth:
+    xs: 12
+    sm: 12
+    md: 12
+  createdAt: 2024-07-11T12:53:50.446Z
+- _id: 02eaf5bd-286e-4810-9f4a-fc8f3627a53e
+  fieldId: 6d55b8d2-c445-4dfc-b506-d32c8066e0eb
+  form: a76c1814-238d-41b0-ba9f-0cd912ca8671
+  components: []
+  pageId: 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  key: button-827
+  type: button
+  parentId: 9e69ac39-2319-4b65-be61-e1548c1fe93b
+  innerSection: true
+  horizontalAlign: center
+  label: Button
+  iconPosition: noIcon
+  action: submit
+  btnVariant: contained
+  buttonBorderRadius: "4"
+  buttonSize:
+    checked: false
+    fontSize: 14
+    height: 36
+    width: 75
+  imageSize:
+    height: "24"
+    width: "24"
+  buttonShadow:
+    checked: false
+    horizontalShadow: 0
+    verticalShadow: 3
+    blurRadius: 5
+    spreadRadius: 3
+    shadowColor: "#00283b"
+    shadowOpacity: 0.2
+  createdAt: 2024-07-11T12:54:08.243Z

@@ -1,0 +1,13 @@
+.footerLine {
+padding:0;
+width:calc( 100% + 32px);
+margin-left:-1rem;
+border-bottom: 2px solid #E5E7EB;
+}
+
+@media only screen and (max-width: 450px) {
+.footerLine {
+width:calc( 100% + 16px);
+margin-left:-0.5rem !important;
+}
+}

@@ -1,0 +1,8 @@
+allowedDomains: []
+customUrls:
+  cdn: ""
+  api: ""
+stepper:
+  steps: []
+  keysToDisableNavigation: []
+  disabledSteps: []

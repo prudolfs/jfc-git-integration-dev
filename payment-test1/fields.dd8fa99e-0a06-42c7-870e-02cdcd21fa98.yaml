@@ -1,0 +1,230 @@
+- _id: f81091a9-dfc1-4c4c-b5c1-0c6a8e121acd
+  fieldId: bad2f57f-efc7-4d35-9621-a408ec35d8a5
+  createdAt: 2023-04-25T10:08:21.493Z
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  components: []
+  pageId: b62bce24-9439-459c-a6b7-20f41e8dadbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  key: payment-294
+  type: payment
+  parentId: f91fe5d4-ae27-44c7-957c-236620bdb288
+  innerSection: true
+  paymentTypes:
+    - value: creditCard
+      label: Debit/Credit Card
+  paymentVendor: custom
+  required: true
+  paymentIframeHeight: "448"
+  paymentIntegrationUrl: https://dig-jfc-cnt-test101-payments-interface.sapiens.com
+- _id: 2982c2a3-f7c0-46cb-bbb6-3c19573b60d0
+  fieldId: 884bd885-b9f3-4ec6-91e1-0a484d526f45
+  createdAt: 2023-04-25T10:53:15.885Z
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  components:
+    - b92c3836-1b4e-4e50-badf-647ee8fd4558
+  pageId: d1e9bf63-f1f0-435b-bd6d-3a99a47b2f72
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  key: section-672
+  type: section
+  parentId: d1e9bf63-f1f0-435b-bd6d-3a99a47b2f72
+  innerSection: false
+- _id: 05d49061-a27a-4fe5-8e82-9b1a199d2b78
+  fieldId: e337d765-1b99-413c-bfc4-612068555c40
+  createdAt: 2023-07-12T09:12:46.401Z
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  components:
+    - 72ab9de5-d3db-4ebc-a961-8bdbea3891f6
+  pageId: b62bce24-9439-459c-a6b7-20f41e8dadbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  key: section-221
+  type: section
+  parentId: b62bce24-9439-459c-a6b7-20f41e8dadbc
+  innerSection: false
+- _id: dcf53033-1c30-4a47-9e7a-8532ad8fd312
+  fieldId: 72ab9de5-d3db-4ebc-a961-8bdbea3891f6
+  createdAt: 2023-07-12T09:12:46.402Z
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  components:
+    - 7a8d9051-9c91-44af-b9d9-5d0a24f019a9
+  pageId: b62bce24-9439-459c-a6b7-20f41e8dadbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  type: column
+  key: column-509
+  parentId: e337d765-1b99-413c-bfc4-612068555c40
+  responsiveWidth:
+    xs: 12
+    sm: 12
+    md: 12
+- _id: ff7c5cd7-6516-4df9-aa6a-6451332ab4ed
+  fieldId: d1e9bf63-f1f0-435b-bd6d-3a99a47b2f72
+  createdAt: 2023-04-25T10:53:09.032Z
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  components:
+    - 884bd885-b9f3-4ec6-91e1-0a484d526f45
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  type: panel
+  isDialog: false
+  label: Status
+  width: 730
+- _id: f735d18a-2bea-4a92-a054-2e077fe4fd68
+  fieldId: 7a8d9051-9c91-44af-b9d9-5d0a24f019a9
+  createdAt: 2023-07-12T09:12:49.650Z
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  components: []
+  pageId: b62bce24-9439-459c-a6b7-20f41e8dadbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  key: content-641
+  type: content
+  parentId: 72ab9de5-d3db-4ebc-a961-8bdbea3891f6
+  innerSection: true
+  fontColor: text-primary
+  fontSize: 16
+  fixedFontSize: false
+  content:
+    options: []
+    default: <h1>Payment Page</h1>
+- _id: cbee3839-8948-4dac-ab58-514ffa3950c1
+  fieldId: b92c3836-1b4e-4e50-badf-647ee8fd4558
+  createdAt: 2023-04-25T10:53:15.885Z
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  components:
+    - 75f165ef-b402-47c9-930b-6d6c62316d13
+  pageId: d1e9bf63-f1f0-435b-bd6d-3a99a47b2f72
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  type: column
+  key: column-891
+  parentId: 884bd885-b9f3-4ec6-91e1-0a484d526f45
+  responsiveWidth:
+    xs: 12
+    sm: 12
+    md: 12
+- _id: d4755633-1799-4bd4-8a13-1bcba36c2c02
+  fieldId: 4c508e05-1f9f-4339-8c60-f4f9778d5eb3
+  createdAt: 2023-04-25T10:08:17.132Z
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  components:
+    - f91fe5d4-ae27-44c7-957c-236620bdb288
+  pageId: b62bce24-9439-459c-a6b7-20f41e8dadbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  key: section-235
+  type: section
+  parentId: b62bce24-9439-459c-a6b7-20f41e8dadbc
+  innerSection: false
+- _id: 4677d503-fd2f-4691-92f6-2000b15047a8
+  fieldId: 75f165ef-b402-47c9-930b-6d6c62316d13
+  createdAt: 2023-04-25T10:53:16.941Z
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  components: []
+  pageId: d1e9bf63-f1f0-435b-bd6d-3a99a47b2f72
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  key: content-477
+  type: content
+  parentId: b92c3836-1b4e-4e50-badf-647ee8fd4558
+  innerSection: true
+  fontColor: text-primary
+  fontSize: 16
+  fixedFontSize: false
+  content:
+    options: []
+    default: |-
+      done
+      Code: {{payment-294.message.Code}}
+      {{payment-294.message}}
+      Message: {{payment-294.message.Message}}
+      ResponseMessage: {{ResponseMessage}}
+      IsoResponseCode: {{IsoResponseCode}}
+      TransactionIdentifier: {{TransactionIdentifier}}
+      OrderIdentifier: {{OrderIdentifier}}
+- _id: 95226989-4883-4047-871d-35fc5fe6a653
+  fieldId: b62bce24-9439-459c-a6b7-20f41e8dadbc
+  createdAt: 2023-04-25T10:08:13.713Z
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  components:
+    - e337d765-1b99-413c-bfc4-612068555c40
+    - 4c508e05-1f9f-4339-8c60-f4f9778d5eb3
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  type: panel
+  isDialog: false
+  label: Payment Page
+  width: 730
+- _id: e99184a3-9ae2-46f4-a745-793ad6de9cce
+  fieldId: f91fe5d4-ae27-44c7-957c-236620bdb288
+  createdAt: 2023-04-25T10:08:17.132Z
+  form: dd8fa99e-0a06-42c7-870e-02cdcd21fa98
+  components:
+    - bad2f57f-efc7-4d35-9621-a408ec35d8a5
+  pageId: b62bce24-9439-459c-a6b7-20f41e8dadbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+  type: column
+  key: column-721
+  parentId: 4c508e05-1f9f-4339-8c60-f4f9778d5eb3
+  responsiveWidth:
+    xs: 12
+    sm: 12
+    md: 12

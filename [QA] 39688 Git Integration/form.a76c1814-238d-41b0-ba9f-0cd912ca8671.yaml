@@ -1,0 +1,39 @@
+_id: a76c1814-238d-41b0-ba9f-0cd912ca8671
+name: "[QA] 39688 Git Integration"
+description: ""
+rootAction: fbf93fee-1383-450b-bd36-1fcb2cfe8900
+shortName: ""
+components:
+  - 08ceffd2-5b3e-4f8f-a738-26a7dc18a60b
+unlinkedFields: []
+formSettings:
+  customUrls:
+    cdn: ""
+    api: ""
+  stepper:
+    keysToDisableNavigation: []
+    disabledSteps: []
+    steps: []
+  allowedDomains: []
+isLive: true
+isTemplate: false
+company: 0c706fc5-fac4-45d8-b216-7f072a8f10f2
+users:
+  - 3a7dc300-3964-44f3-8659-8045906f5dff
+stagingState: draft
+ranMigrations:
+  - 20220110200338-deleteDuplicates.js
+  - 20220111103009-mustacheExpressions.js
+  - 20220211105753-forms_publishing.js
+  - 20220214152546-forms_publishing.js
+  - 20220426111554-set_ran_migrations.js
+  - 20220506122750-add_imageAssetId_to_fields.js
+  - 20231218161113-content_and_html_show_error_to_error_label.js
+metaModels: []
+swaggerApi: []
+metaModelsFieldsData: []
+formShouldBeCommitted: false
+formShouldBePushed: true
+createdAt: 2024-07-11T12:44:58.167Z
+formGroupId: 26aa6205-c264-4cad-8023-4f48fbcad157
+id: a76c1814-238d-41b0-ba9f-0cd912ca8671

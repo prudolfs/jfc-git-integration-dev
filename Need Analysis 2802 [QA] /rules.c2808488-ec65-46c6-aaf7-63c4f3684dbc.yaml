@@ -1,0 +1,1650 @@
+- _id: b3589d6b-f9c1-4885-8291-95e4620a024d
+  ruleId: 6b00dba6-f6b8-48da-ab90-25bd62e2d7ca
+  name: enableNextBtn
+  when:
+    triggerType: fields
+    triggers:
+      - field: dateOfBirthUI
+        event: dataChange
+        _id: 63db814098bdec0043801de6
+  condition:
+    rootId: 4c0c1af4-02b5-4680-9243-17198b9b7851
+    nodes:
+      039cdb4d-8a9e-47a8-a20c-896dcc58a778:
+        id: 039cdb4d-8a9e-47a8-a20c-896dcc58a778
+        type: condition
+        key: "{{dateOfBirthUI}}"
+        operator: exist
+      4c0c1af4-02b5-4680-9243-17198b9b7851:
+        id: 4c0c1af4-02b5-4680-9243-17198b9b7851
+        type: group
+        operator: and
+        children:
+          - 039cdb4d-8a9e-47a8-a20c-896dcc58a778
+          - ad9e679f-b1a7-4d5d-84a8-5a859bcb4c50
+      ad9e679f-b1a7-4d5d-84a8-5a859bcb4c50:
+        id: ad9e679f-b1a7-4d5d-84a8-5a859bcb4c50
+        type: condition
+        key: "{{dateOfBirthUI}}"
+        operator: neq
+        value: "0"
+  actions:
+    - field: dobNextBtn
+      property: disabled
+      value: false
+  elseDoNegative: true
+  pageId: d2649f3b-4c5e-4ff9-8a59-6eeb1980b169
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 9ace7987-27f5-48c3-a4da-988081c71f3f
+  ruleId: eb845c00-6235-4d82-a2f2-9802a1994255
+  name: validateSumInsured
+  when:
+    triggerType: fields
+    triggers:
+      - field: sumInsured
+        event: dataChange
+        _id: 638080544856b60042bbdf43
+  condition:
+    rootId: e18fbc34-b725-4303-a7d0-0175e69bac4a
+    nodes:
+      e18fbc34-b725-4303-a7d0-0175e69bac4a:
+        id: e18fbc34-b725-4303-a7d0-0175e69bac4a
+        type: condition
+        key: "{{sumInsured}}"
+        operator: regex
+        value: ^(?!\s*$).+
+  actions:
+    - field: button
+      property: data
+      value: validateAPI
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: f63fbffa-5c9e-4d0b-aff3-da7b54a67ed6
+  ruleId: b66a9167-159a-4e4f-968c-77453dbab0da
+  name: showErrorMsg
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 095a8b82-f251-4bbc-ac26-99ddf9b2681e
+    nodes:
+      bef5139b-fde6-4342-9ea0-70ff761928ce:
+        id: bef5139b-fde6-4342-9ea0-70ff761928ce
+        type: condition
+        key: "{{showerrorMsg}}"
+        operator: exist
+      095a8b82-f251-4bbc-ac26-99ddf9b2681e:
+        id: 095a8b82-f251-4bbc-ac26-99ddf9b2681e
+        type: group
+        operator: and
+        children:
+          - bef5139b-fde6-4342-9ea0-70ff761928ce
+          - 643d4fb7-7ed9-42c2-b3ae-a90350cc8a69
+      643d4fb7-7ed9-42c2-b3ae-a90350cc8a69:
+        id: 643d4fb7-7ed9-42c2-b3ae-a90350cc8a69
+        type: condition
+        key: "{{showerrorMsg}}"
+        operator: eq
+        value: "true"
+  actions:
+    - field: errorMsgSI
+      property: hidden
+      value: false
+    - field: inputerrorcss
+      property: data
+      value: errorInput
+  elseDoNegative: true
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 1f3212d8-a74b-4449-81bc-006936ecff31
+  ruleId: 62354f5e-abd5-4cfa-b461-4da605a1cc75
+  name: hideErrorMsg
+  when:
+    triggerType: fields
+    triggers:
+      - field: sumInsured
+        event: dataChange
+        _id: 63a456674856b60042bc608c
+  condition:
+    rootId: ede80e7a-d858-42eb-a334-e4583840ac9b
+    nodes:
+      ede80e7a-d858-42eb-a334-e4583840ac9b:
+        id: ede80e7a-d858-42eb-a334-e4583840ac9b
+        type: condition
+        key: "{{showerrorMsg}}"
+        operator: eq
+        value: "true"
+  actions:
+    - field: showerrorMsg
+      property: data
+      value: "false"
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 02fe5934-64a6-4b7d-aff5-0e968195a6b3
+  ruleId: bec5e2cc-72c0-4752-afbd-6aa15b4d038d
+  name: showHideClickHereSec
+  when:
+    triggerType: fields
+    triggers:
+      - field: clickHereBtn
+        event: onClick
+        _id: 63bcf1b54856b60042bc7330
+  condition:
+    isAlwaysTrue: true
+    rootId: 88caa520-3ef9-4496-984b-c0730c7112b9
+    nodes:
+      88caa520-3ef9-4496-984b-c0730c7112b9:
+        id: 88caa520-3ef9-4496-984b-c0730c7112b9
+        type: condition
+        key: "{{calculatingSumAssured}}"
+        operator: eq
+        value: "1"
+  actions:
+    - field: clickHereSec
+      property: hidden
+      value: true
+    - field: SumAssuredSec
+      property: hidden
+      value: true
+    - field: orSection
+      property: hidden
+      value: true
+    - field: protectionTypeSec
+      property: hidden
+      value: false
+    - field: sumInsured
+      property: data
+      value: ""
+    - field: nextBtnSI
+      property: hidden
+      value: true
+    - field: calculateBtnSec
+      property: hidden
+      value: false
+  elseDoNegative: false
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: c432ba6a-d4df-4d97-84dd-53ebf9305c50
+  ruleId: d4c96621-d171-40d6-be4c-f518e6cc524b
+  name: showHideExistingPoliciesSA
+  when:
+    triggerType: fields
+    triggers:
+      - field: user.calculate.anyExistPolicies
+        event: dataChange
+        _id: 63bd17224856b60042bc7700
+  condition:
+    rootId: 10237a84-ebf6-4911-a3db-3ff938d09eb7
+    nodes:
+      10237a84-ebf6-4911-a3db-3ff938d09eb7:
+        id: 10237a84-ebf6-4911-a3db-3ff938d09eb7
+        type: condition
+        key: "{{user.calculate.anyExistPolicies}}"
+        operator: neq
+        value: "1"
+  actions:
+    - field: totalSumAssuredSec
+      property: hidden
+      value: true
+    - field: user.calculate.totalSumAssured
+      property: data
+      value: "0"
+  elseDoNegative: true
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 150bb94c-353d-4332-956a-a0bb9ec972e5
+  ruleId: e60e694d-3edd-4f5c-b273-445f5bf3c020
+  name: showHideDebtRepaymentSec
+  when:
+    triggerType: fields
+    triggers:
+      - field: user.calculate.debtRepayment
+        event: dataChange
+        _id: 63bcfe4b4856b60042bc7573
+  condition:
+    rootId: 37216b04-a39d-47ed-92bf-a352b18bff22
+    nodes:
+      37216b04-a39d-47ed-92bf-a352b18bff22:
+        id: 37216b04-a39d-47ed-92bf-a352b18bff22
+        type: condition
+        key: "{{user.calculate.debtRepayment}}"
+        operator: eq
+        value: "true"
+  actions:
+    - field: creditCardSec
+      property: hidden
+      value: false
+    - field: outstandingLoansSec
+      property: hidden
+      value: false
+  elseDoNegative: true
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 2c9d60ec-f27f-4b62-8027-4911956b06df
+  ruleId: 8bf9b1fa-36e3-4be2-9f99-1e5b3876d319
+  name: EnableDisableCalculateBtn
+  when:
+    triggerType: fields
+    triggers:
+      - field: user.calculate.incomeProtection
+        event: dataChange
+        _id: 63be47774856b60042bc7c6d
+      - field: user.calculate.debtRepayment
+        event: dataChange
+        _id: 63be47794856b60042bc7c6f
+      - field: user.calculate.funeralExpenses
+        event: dataChange
+        _id: 63be477a4856b60042bc7c71
+      - field: user.calculate.anyExistPolicies
+        event: dataChange
+        _id: 63be477b4856b60042bc7c73
+      - field: user.calculate.totalSumAssured
+        event: dataChange
+        _id: 63be477d4856b60042bc7c75
+      - field: user.calculate.outstandingLoans
+        event: dataChange
+        _id: 63be477e4856b60042bc7c77
+      - field: user.calculate.creditCardBalance
+        event: dataChange
+        _id: 63be477f4856b60042bc7c79
+      - field: user.calculate.annualIncome
+        event: dataChange
+        _id: 63be47804856b60042bc7c7b
+      - field: user.calculate.funeralExpenseAmount
+        event: dataChange
+        _id: 63be4c134856b60042bc7d71
+  condition:
+    rootId: b3d9d1a4-d10d-42c5-aff7-a1387e67b66c
+    nodes:
+      b3d9d1a4-d10d-42c5-aff7-a1387e67b66c:
+        id: b3d9d1a4-d10d-42c5-aff7-a1387e67b66c
+        type: group
+        operator: and
+        children:
+          - a0c9ab18-1b65-4377-acdb-b6d800c67d82
+          - e21a5375-ed71-4328-85cc-8dbc035c58d3
+          - 6e90bd57-94b1-4e14-b3e4-ed84562671ad
+      a0c9ab18-1b65-4377-acdb-b6d800c67d82:
+        id: a0c9ab18-1b65-4377-acdb-b6d800c67d82
+        type: group
+        operator: and
+        children:
+          - 27d0c914-3270-4fff-b41a-8c34f440a473
+          - 935ac043-98c4-4b9f-af08-00302afb6773
+          - cbc2dc18-5496-46d6-b29b-93b6a18b5514
+      27d0c914-3270-4fff-b41a-8c34f440a473:
+        id: 27d0c914-3270-4fff-b41a-8c34f440a473
+        type: group
+        operator: or
+        children:
+          - e608c54f-bfc3-4dbf-885a-ebc8bea23327
+          - f4fd5180-9cff-4d9a-9bd1-d469b8805e0d
+          - 7afc440a-c697-4846-8cb4-5ae799f77749
+      e608c54f-bfc3-4dbf-885a-ebc8bea23327:
+        id: e608c54f-bfc3-4dbf-885a-ebc8bea23327
+        type: condition
+        key: "{{user.calculate.incomeProtection}}"
+        operator: eq
+        value: "true"
+      f4fd5180-9cff-4d9a-9bd1-d469b8805e0d:
+        id: f4fd5180-9cff-4d9a-9bd1-d469b8805e0d
+        type: condition
+        key: "{{user.calculate.debtRepayment}}"
+        operator: eq
+        value: "true"
+      7afc440a-c697-4846-8cb4-5ae799f77749:
+        id: 7afc440a-c697-4846-8cb4-5ae799f77749
+        type: condition
+        key: "{{user.calculate.funeralExpenses}}"
+        operator: eq
+        value: "true"
+      935ac043-98c4-4b9f-af08-00302afb6773:
+        id: 935ac043-98c4-4b9f-af08-00302afb6773
+        type: condition
+        key: "{{user.calculate.annualIncome}}"
+        operator: regex
+        value: ^(?!\s*$).+
+      e21a5375-ed71-4328-85cc-8dbc035c58d3:
+        id: e21a5375-ed71-4328-85cc-8dbc035c58d3
+        type: group
+        operator: or
+        children:
+          - dc024a8c-b0a5-485d-ae1b-534e66242a57
+          - cd57ab4d-d43f-4eb2-81ea-7bac92de97e7
+      cbc2dc18-5496-46d6-b29b-93b6a18b5514:
+        id: cbc2dc18-5496-46d6-b29b-93b6a18b5514
+        type: group
+        operator: or
+        children:
+          - 1336d1d5-0d0d-40a0-bde6-72a39c347781
+          - 6c495921-b96b-457e-90ba-1be2ae219497
+      1336d1d5-0d0d-40a0-bde6-72a39c347781:
+        id: 1336d1d5-0d0d-40a0-bde6-72a39c347781
+        type: group
+        operator: and
+        children:
+          - 6c3e69cf-b91f-4882-95e2-aecf76a69b8d
+          - e2f20b42-0798-45ad-87f4-e0b821fc15db
+      6c3e69cf-b91f-4882-95e2-aecf76a69b8d:
+        id: 6c3e69cf-b91f-4882-95e2-aecf76a69b8d
+        type: condition
+        key: "{{user.calculate.anyExistPolicies}}"
+        operator: eq
+        value: "1"
+      e2f20b42-0798-45ad-87f4-e0b821fc15db:
+        id: e2f20b42-0798-45ad-87f4-e0b821fc15db
+        type: condition
+        key: "{{user.calculate.totalSumAssured}}"
+        operator: regex
+        value: ^(?!\s*$).+
+      6c495921-b96b-457e-90ba-1be2ae219497:
+        id: 6c495921-b96b-457e-90ba-1be2ae219497
+        type: condition
+        key: "{{user.calculate.anyExistPolicies}}"
+        operator: eq
+        value: "0"
+      dc024a8c-b0a5-485d-ae1b-534e66242a57:
+        id: dc024a8c-b0a5-485d-ae1b-534e66242a57
+        type: condition
+        key: "{{user.calculate.debtRepayment}}"
+        operator: eq
+        value: "false"
+      cd57ab4d-d43f-4eb2-81ea-7bac92de97e7:
+        id: cd57ab4d-d43f-4eb2-81ea-7bac92de97e7
+        type: group
+        operator: and
+        children:
+          - 21a8d2a7-ea1d-42cf-9fef-f8a7d87e1ba2
+          - e163553a-0671-41fb-8ccd-b2c1a5ff962d
+          - 10678fdf-9a81-425f-8248-58fff3a5bb5a
+      21a8d2a7-ea1d-42cf-9fef-f8a7d87e1ba2:
+        id: 21a8d2a7-ea1d-42cf-9fef-f8a7d87e1ba2
+        type: condition
+        key: "{{user.calculate.debtRepayment}}"
+        operator: eq
+        value: "true"
+      e163553a-0671-41fb-8ccd-b2c1a5ff962d:
+        id: e163553a-0671-41fb-8ccd-b2c1a5ff962d
+        type: condition
+        key: "{{user.calculate.outstandingLoans}}"
+        operator: regex
+        value: ^(?!\s*$).+
+      10678fdf-9a81-425f-8248-58fff3a5bb5a:
+        id: 10678fdf-9a81-425f-8248-58fff3a5bb5a
+        type: condition
+        key: "{{user.calculate.creditCardBalance}}"
+        operator: regex
+        value: ^(?!\s*$).+
+      6e90bd57-94b1-4e14-b3e4-ed84562671ad:
+        id: 6e90bd57-94b1-4e14-b3e4-ed84562671ad
+        type: group
+        operator: or
+        children:
+          - b669ee3f-5207-4cf3-814e-9c6caa8a6f9c
+          - 44e79f22-be63-4754-a733-f97b1122df93
+      b669ee3f-5207-4cf3-814e-9c6caa8a6f9c:
+        id: b669ee3f-5207-4cf3-814e-9c6caa8a6f9c
+        type: condition
+        key: "{{user.calculate.funeralExpenses}}"
+        operator: eq
+        value: "false"
+      44e79f22-be63-4754-a733-f97b1122df93:
+        id: 44e79f22-be63-4754-a733-f97b1122df93
+        type: group
+        operator: and
+        children:
+          - d246f2ef-9b95-495d-94ee-eae99cd42e51
+          - 1f75cf55-9962-4741-9767-00a43ce7af31
+      d246f2ef-9b95-495d-94ee-eae99cd42e51:
+        id: d246f2ef-9b95-495d-94ee-eae99cd42e51
+        type: condition
+        key: "{{user.calculate.funeralExpenses}}"
+        operator: eq
+        value: "true"
+      1f75cf55-9962-4741-9767-00a43ce7af31:
+        id: 1f75cf55-9962-4741-9767-00a43ce7af31
+        type: condition
+        key: "{{user.calculate.funeralExpenseAmount}}"
+        operator: regex
+        value: ^(?!\s*$).+
+  actions:
+    - field: calculateBtnSA
+      property: disabled
+      value: false
+  elseDoNegative: true
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: da394ef1-1a71-4a0a-9fea-f92420ab1c79
+  ruleId: 60ad75f3-71ed-4fba-bc95-4fa737050ace
+  name: ResetValuesForDebtPayment
+  when:
+    triggerType: fields
+    triggers:
+      - field: user.calculate.debtRepayment
+        event: dataChange
+        _id: 63be4b4c4856b60042bc7d2d
+  condition:
+    rootId: 1d4b3037-3ae9-47a1-9fb8-cb43617615ff
+    nodes:
+      1d4b3037-3ae9-47a1-9fb8-cb43617615ff:
+        id: 1d4b3037-3ae9-47a1-9fb8-cb43617615ff
+        type: condition
+        key: "{{user.calculate.debtRepayment}}"
+        operator: eq
+        value: "false"
+  actions:
+    - field: user.calculate.outstandingLoans
+      property: data
+      value: ""
+    - field: user.calculate.creditCardBalance
+      property: data
+      value: ""
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 610a46cc-ca61-4ea3-b57f-4b435aec053e
+  ruleId: fc9cd0b1-cce6-489f-9a80-85300858c6f8
+  name: applyplaceholderCSS
+  when:
+    triggerType: anyData
+    triggers:
+      - field: dateOfBirth
+        event: dataChange
+        _id: 63d78ede3c89940043090b4d
+  condition:
+    rootId: ff02e108-46cd-4e34-8631-88d47ee60028
+    nodes:
+      ff02e108-46cd-4e34-8631-88d47ee60028:
+        id: ff02e108-46cd-4e34-8631-88d47ee60028
+        type: condition
+        key: "{{dateOfBirthUI}}"
+        operator: nexist
+  actions:
+    - field: placeholder
+      property: data
+      value: opaque
+  pageId: d2649f3b-4c5e-4ff9-8a59-6eeb1980b169
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: ebf5153f-131b-4a13-8cfd-2fb1e21abbd9
+  ruleId: dee6b91f-38c4-4987-b936-d025850d410d
+  name: enableNextBtn
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: f98d89d7-0a17-438e-b311-0b8484deaa9b
+    nodes:
+      f84ebf12-ac3f-4bdc-900b-9a91354fd889:
+        id: f84ebf12-ac3f-4bdc-900b-9a91354fd889
+        type: condition
+        key: "{{clickHereClicked}}"
+        operator: neq
+        value: "1"
+      f98d89d7-0a17-438e-b311-0b8484deaa9b:
+        id: f98d89d7-0a17-438e-b311-0b8484deaa9b
+        type: group
+        operator: or
+        children:
+          - f84ebf12-ac3f-4bdc-900b-9a91354fd889
+          - b1c4395a-4a29-445c-9abe-2c2fc3d3959d
+      b1c4395a-4a29-445c-9abe-2c2fc3d3959d:
+        id: b1c4395a-4a29-445c-9abe-2c2fc3d3959d
+        type: group
+        operator: and
+        children:
+          - 12c2468a-5d43-45d9-ae2c-87aa6c6a8019
+          - 9fdf99b7-40dc-49fa-bfa2-e904ca7309e5
+      12c2468a-5d43-45d9-ae2c-87aa6c6a8019:
+        id: 12c2468a-5d43-45d9-ae2c-87aa6c6a8019
+        type: condition
+        key: "{{clickHereClicked}}"
+        operator: eq
+        value: "1"
+      9fdf99b7-40dc-49fa-bfa2-e904ca7309e5:
+        id: 9fdf99b7-40dc-49fa-bfa2-e904ca7309e5
+        type: condition
+        key: "{{calculatedSA}}"
+        operator: regex
+        value: ^(?!\s*$).+
+  actions:
+    - field: nextBtnPopup
+      property: disabled
+      value: false
+  elseDoNegative: true
+  pageId: cd1b5821-88a8-4c67-a4c4-e42b7e28f858
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 82a7b5d9-f484-42ff-be05-091bace4241a
+  ruleId: ecc23b23-098b-400f-b21b-2c64d32a0e3f
+  name: assigndob
+  when:
+    triggerType: fields
+    triggers:
+      - field: dateOfBirthUI
+        event: dataChange
+        _id: 63db818498bdec0043801ded
+  condition:
+    isAlwaysTrue: true
+    rootId: dd08e5bd-215f-4f27-8af4-4e12dca61792
+    nodes:
+      dd08e5bd-215f-4f27-8af4-4e12dca61792:
+        id: dd08e5bd-215f-4f27-8af4-4e12dca61792
+        type: condition
+  actions:
+    - field: dateOfBirth
+      property: data
+      value: "{{#moment.en}}yyyy-MM-DD|{{dateOfBirthUI}}{{/moment.en}}"
+  pageId: d2649f3b-4c5e-4ff9-8a59-6eeb1980b169
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 35ed3329-e07d-46ce-a507-4a0cfea0a8bc
+  ruleId: f18c43c5-9eef-45f1-88e1-cc70a9a8e5f5
+  name: enableNextBtn
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 802b9d75-7727-4cd2-81f9-41080ba331fb
+    nodes:
+      802b9d75-7727-4cd2-81f9-41080ba331fb:
+        id: 802b9d75-7727-4cd2-81f9-41080ba331fb
+        type: condition
+        key: "{{gender}}"
+        operator: exist
+  actions:
+    - field: genderNext
+      property: disabled
+      value: false
+  elseDoNegative: true
+  pageId: ac4ec6db-c0b5-46ff-a2bf-195ce3c34b37
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 9664f3e4-37f8-48ef-a8ac-f11ca5a47b61
+  ruleId: c0b0f16c-e3e4-40fa-9418-2651a7279568
+  name: enableNextButton
+  when:
+    triggerType: anyData
+    triggers:
+      - field: sumInsured
+        event: dataChange
+        _id: 63804c1b4856b60042bbd6a7
+      - field: user.calculate.calculatedSumAssured
+        event: dataChange
+        _id: 63be4a684856b60042bc7d13
+  condition:
+    rootId: 43d1ef52-de45-4247-bb91-74a3254a8b22
+    nodes:
+      43d1ef52-de45-4247-bb91-74a3254a8b22:
+        id: 43d1ef52-de45-4247-bb91-74a3254a8b22
+        type: group
+        operator: or
+        children:
+          - da559544-96e6-437d-b4c0-02f5bcb30a57
+          - 56413a79-197d-4e23-b84a-9c3b451262c7
+      da559544-96e6-437d-b4c0-02f5bcb30a57:
+        id: da559544-96e6-437d-b4c0-02f5bcb30a57
+        type: group
+        operator: and
+        children:
+          - 1bde05d3-23a5-446f-8d35-d55d4f61a1da
+          - 6e7f0069-38b1-4132-bfc6-45aa377d43e0
+      1bde05d3-23a5-446f-8d35-d55d4f61a1da:
+        id: 1bde05d3-23a5-446f-8d35-d55d4f61a1da
+        type: condition
+        key: "{{sumInsured}}"
+        operator: exist
+      6e7f0069-38b1-4132-bfc6-45aa377d43e0:
+        id: 6e7f0069-38b1-4132-bfc6-45aa377d43e0
+        type: condition
+        key: "{{sumInsured}}"
+        operator: regex
+        value: ^(?!\s*$).+
+      56413a79-197d-4e23-b84a-9c3b451262c7:
+        id: 56413a79-197d-4e23-b84a-9c3b451262c7
+        type: group
+        operator: and
+        children:
+          - 50850c62-c228-406c-9983-33a6cb4f5b39
+          - 1bdfc308-835d-4aac-a5b1-7225cb05f5c3
+          - fce989a3-af59-423f-baa4-282d4542de0c
+          - 3d48c3af-bdd9-4d22-8ac0-3d54d8a7487d
+      50850c62-c228-406c-9983-33a6cb4f5b39:
+        id: 50850c62-c228-406c-9983-33a6cb4f5b39
+        type: group
+        operator: and
+        children:
+          - 17e5c419-ae30-40b7-b176-1d24cc3e31b2
+          - 9d9a841e-4765-4500-bfb2-94ff9877a45e
+          - 5961022a-86d0-4fa9-b747-cae6f6094671
+          - af5ba18c-a91c-4973-ba1a-ecaba1c2c750
+      17e5c419-ae30-40b7-b176-1d24cc3e31b2:
+        id: 17e5c419-ae30-40b7-b176-1d24cc3e31b2
+        type: group
+        operator: or
+        children:
+          - f329f123-3eb1-4000-a530-5e2eadb9638f
+          - 9404887e-bce3-4d08-9237-6a6efcf43679
+          - 8cd5dde4-3045-4293-9f25-4beb6e02b22c
+      f329f123-3eb1-4000-a530-5e2eadb9638f:
+        id: f329f123-3eb1-4000-a530-5e2eadb9638f
+        type: condition
+        key: "{{user.calculate.incomeProtection}}"
+        operator: eq
+        value: "true"
+      9404887e-bce3-4d08-9237-6a6efcf43679:
+        id: 9404887e-bce3-4d08-9237-6a6efcf43679
+        type: condition
+        key: "{{user.calculate.debtRepayment}}"
+        operator: eq
+        value: "true"
+      8cd5dde4-3045-4293-9f25-4beb6e02b22c:
+        id: 8cd5dde4-3045-4293-9f25-4beb6e02b22c
+        type: condition
+        key: "{{user.calculate.funeralExpenses}}"
+        operator: eq
+        value: "true"
+      9d9a841e-4765-4500-bfb2-94ff9877a45e:
+        id: 9d9a841e-4765-4500-bfb2-94ff9877a45e
+        type: condition
+        key: "{{user.calculate.annualIncome}}"
+        operator: regex
+        value: ^(?!\s*$).+
+      5961022a-86d0-4fa9-b747-cae6f6094671:
+        id: 5961022a-86d0-4fa9-b747-cae6f6094671
+        type: condition
+        key: "{{user.calculate.calculatedSumAssured}}"
+        operator: regex
+        value: ^(?!\s*$).+
+      af5ba18c-a91c-4973-ba1a-ecaba1c2c750:
+        id: af5ba18c-a91c-4973-ba1a-ecaba1c2c750
+        type: group
+        operator: or
+        children:
+          - b34d792d-79a1-4a5d-9788-d1c57d16b4bd
+          - 355cf0be-d9a9-449c-a6ee-04547ea5daee
+      b34d792d-79a1-4a5d-9788-d1c57d16b4bd:
+        id: b34d792d-79a1-4a5d-9788-d1c57d16b4bd
+        type: group
+        operator: and
+        children:
+          - b896bec7-5031-4c1c-a973-9072bca7fbc9
+          - f6c576e0-14b3-4655-8a4f-8c492e2b51f4
+      b896bec7-5031-4c1c-a973-9072bca7fbc9:
+        id: b896bec7-5031-4c1c-a973-9072bca7fbc9
+        type: condition
+        key: "{{user.calculate.anyExistPolicies}}"
+        operator: eq
+        value: "1"
+      f6c576e0-14b3-4655-8a4f-8c492e2b51f4:
+        id: f6c576e0-14b3-4655-8a4f-8c492e2b51f4
+        type: condition
+        key: "{{user.calculate.totalSumAssured}}"
+        operator: regex
+        value: ^(?!\s*$).+
+      355cf0be-d9a9-449c-a6ee-04547ea5daee:
+        id: 355cf0be-d9a9-449c-a6ee-04547ea5daee
+        type: condition
+        key: "{{user.calculate.anyExistPolicies}}"
+        operator: eq
+        value: "0"
+      1bdfc308-835d-4aac-a5b1-7225cb05f5c3:
+        id: 1bdfc308-835d-4aac-a5b1-7225cb05f5c3
+        type: group
+        operator: or
+        children:
+          - 6f768ba6-40e0-4742-9596-f0dfaca0394e
+          - d12082a9-e34d-48c5-b61e-f1ba774a933e
+      6f768ba6-40e0-4742-9596-f0dfaca0394e:
+        id: 6f768ba6-40e0-4742-9596-f0dfaca0394e
+        type: group
+        operator: and
+        children:
+          - 1e391cfa-f710-41bd-bf23-f25bd92017ab
+          - 7284b0b5-a7aa-45da-95df-3da130730f15
+          - f56cefd3-0bc3-43ff-a437-ab36d7b70a48
+      d12082a9-e34d-48c5-b61e-f1ba774a933e:
+        id: d12082a9-e34d-48c5-b61e-f1ba774a933e
+        type: condition
+        key: "{{user.calculate.debtRepayment}}"
+        operator: eq
+        value: "false"
+      1e391cfa-f710-41bd-bf23-f25bd92017ab:
+        id: 1e391cfa-f710-41bd-bf23-f25bd92017ab
+        type: condition
+        key: "{{user.calculate.debtRepayment}}"
+        operator: eq
+        value: "true"
+      7284b0b5-a7aa-45da-95df-3da130730f15:
+        id: 7284b0b5-a7aa-45da-95df-3da130730f15
+        type: condition
+        key: "{{user.calculate.outstandingLoans}}"
+        operator: regex
+        value: ^(?!\s*$).+
+      f56cefd3-0bc3-43ff-a437-ab36d7b70a48:
+        id: f56cefd3-0bc3-43ff-a437-ab36d7b70a48
+        type: condition
+        key: "{{user.calculate.creditCardBalance}}"
+        operator: regex
+        value: ^(?!\s*$).+
+      fce989a3-af59-423f-baa4-282d4542de0c:
+        id: fce989a3-af59-423f-baa4-282d4542de0c
+        type: group
+        operator: or
+        children:
+          - acd2630f-8c75-4d0d-97c8-2222a2c30d88
+          - 476a2dc1-5c1b-4821-b92a-265b92bd6f9e
+      acd2630f-8c75-4d0d-97c8-2222a2c30d88:
+        id: acd2630f-8c75-4d0d-97c8-2222a2c30d88
+        type: condition
+        key: "{{user.calculate.funeralExpenses}}"
+        operator: eq
+        value: "false"
+      476a2dc1-5c1b-4821-b92a-265b92bd6f9e:
+        id: 476a2dc1-5c1b-4821-b92a-265b92bd6f9e
+        type: group
+        operator: and
+        children:
+          - fd0c0dbd-b368-4c84-b9b5-362faacefd11
+          - 846961dc-57dc-4c27-91ee-33f630761f0b
+      fd0c0dbd-b368-4c84-b9b5-362faacefd11:
+        id: fd0c0dbd-b368-4c84-b9b5-362faacefd11
+        type: condition
+        key: "{{user.calculate.funeralExpenses}}"
+        operator: eq
+        value: "true"
+      846961dc-57dc-4c27-91ee-33f630761f0b:
+        id: 846961dc-57dc-4c27-91ee-33f630761f0b
+        type: condition
+        key: "{{user.calculate.funeralExpenseAmount}}"
+        operator: regex
+        value: ^(?!\s*$).+
+      3d48c3af-bdd9-4d22-8ac0-3d54d8a7487d:
+        id: 3d48c3af-bdd9-4d22-8ac0-3d54d8a7487d
+        type: condition
+        key: "{{isCalculateEnabled}}"
+        operator: eq
+        value: "false"
+  actions:
+    - field: nextBtnSI
+      property: disabled
+      value: false
+    - field: isDisabledText
+      property: data
+      value: ""
+  elseDoNegative: true
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 9c36abd0-7d6f-48e1-8f95-0b15724a014a
+  ruleId: ff3339d8-ee91-422d-bcdd-9addcebc151f
+  name: EnableNextBtn
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 9576e4b2-af04-43bb-b954-aab3f35b67ff
+    nodes:
+      9576e4b2-af04-43bb-b954-aab3f35b67ff:
+        id: 9576e4b2-af04-43bb-b954-aab3f35b67ff
+        type: condition
+        key: "{{{smoker}}}"
+        operator: exist
+  actions:
+    - field: smokerNextBtn
+      property: disabled
+      value: false
+  elseDoNegative: true
+  pageId: ed269e86-742e-43dc-81f1-ef49003f8099
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: a87b50b4-e513-47f6-8fb3-d43fdf5ad880
+  ruleId: e9461c3c-8909-401b-b274-9e7f5f49f507
+  name: showErrorMsg
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: e78d9a49-054d-43b6-882c-27bb9364318b
+    nodes:
+      b81961b5-aab7-4afd-927b-46d344de0102:
+        id: b81961b5-aab7-4afd-927b-46d344de0102
+        type: condition
+        key: "{{showerrorMsg}}"
+        operator: exist
+      e78d9a49-054d-43b6-882c-27bb9364318b:
+        id: e78d9a49-054d-43b6-882c-27bb9364318b
+        type: group
+        operator: and
+        children:
+          - b81961b5-aab7-4afd-927b-46d344de0102
+          - 2a83c5db-5003-4317-855d-e718c3ca9d23
+      2a83c5db-5003-4317-855d-e718c3ca9d23:
+        id: 2a83c5db-5003-4317-855d-e718c3ca9d23
+        type: condition
+        key: "{{showerrorMsg}}"
+        operator: eq
+        value: "true"
+  actions:
+    - field: errorMessagepopup
+      property: hidden
+      value: false
+    - field: saerrorcss
+      property: data
+      value: redBorder
+  elseDoNegative: true
+  pageId: cd1b5821-88a8-4c67-a4c4-e42b7e28f858
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: b27a9f0c-ec6e-4bf0-a3c7-c5be2f46c973
+  ruleId: b236920e-fdd5-4fef-8ccf-bc15a8b04f4b
+  name: hideErrorMsg
+  when:
+    triggerType: fields
+    triggers:
+      - field: calculatedSA
+        event: dataChange
+        _id: 63d9d4a498bdec004380173b
+  condition:
+    rootId: f9d25432-8790-4ef6-b7f3-cb1bbd04d8ec
+    nodes:
+      f9d25432-8790-4ef6-b7f3-cb1bbd04d8ec:
+        id: f9d25432-8790-4ef6-b7f3-cb1bbd04d8ec
+        type: condition
+        key: "{{showerrorMsg}}"
+        operator: eq
+        value: "true"
+  actions:
+    - field: showerrorMsg
+      property: data
+      value: "false"
+  pageId: cd1b5821-88a8-4c67-a4c4-e42b7e28f858
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 33e7d720-9d59-4f75-8510-85cf32ac491c
+  ruleId: f05cb0b3-10e4-4f07-a336-d4d0d992e16b
+  name: disableErrorMessage
+  when:
+    triggerType: fields
+    triggers:
+      - field: dateOfBirthUI
+        event: dataChange
+        _id: 63db816298bdec0043801de9
+  condition:
+    rootId: 870e84a6-1936-419f-a11b-41e0277a6154
+    nodes:
+      870e84a6-1936-419f-a11b-41e0277a6154:
+        id: 870e84a6-1936-419f-a11b-41e0277a6154
+        type: condition
+        key: "{{isAgeApplicable}}"
+        operator: eq
+        value: "false"
+  actions:
+    - field: isAgeApplicable
+      property: data
+      value: "true"
+  pageId: d2649f3b-4c5e-4ff9-8a59-6eeb1980b169
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 75c67ea3-15fb-4c74-abad-f9ecbc3ce250
+  ruleId: 60aca90a-a58e-41d8-ba49-c99ed63ffa7e
+  name: showHideFuneralExpenseSec
+  when:
+    triggerType: fields
+    triggers:
+      - field: user.calculate.funeralExpenses
+        event: dataChange
+        _id: 63bcff464856b60042bc7597
+  condition:
+    rootId: 7a90abdc-ad11-408b-b264-b1082854deb3
+    nodes:
+      7a90abdc-ad11-408b-b264-b1082854deb3:
+        id: 7a90abdc-ad11-408b-b264-b1082854deb3
+        type: condition
+        key: "{{user.calculate.funeralExpenses}}"
+        operator: eq
+        value: "true"
+  actions:
+    - field: funeralExpenseSec
+      property: hidden
+      value: false
+  elseDoNegative: true
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: a6b9a24e-6414-49d3-86bc-cf5159d97baf
+  ruleId: 18dea52b-479a-4363-94d0-6672b0ee01cd
+  name: ShowThankYouSec
+  when:
+    triggerType: fields
+    triggers:
+      - field: calculateBtnSA
+        event: onClick
+        _id: 63be447b4856b60042bc7bfd
+  condition:
+    isAlwaysTrue: true
+    rootId: 64ee83ef-e08f-4807-89a5-2ff1dda760ae
+    nodes:
+      64ee83ef-e08f-4807-89a5-2ff1dda760ae:
+        id: 64ee83ef-e08f-4807-89a5-2ff1dda760ae
+        type: condition
+  actions:
+    - field: thankYouSec
+      property: hidden
+      value: false
+    - field: thankYouSec
+      property: disabled
+      value: true
+    - field: calculateBtnSA
+      property: disabled
+      value: true
+    - field: isCalculateEnabled
+      property: data
+      value: "false"
+    - field: isDisabledText
+      property: data
+      value: textChange
+    - field: clickHereClicked
+      property: data
+      value: "0"
+    - field: enableCalculate
+      property: data
+      value: "false"
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 9599a511-fad8-4dd4-a3b7-e4de54c25a2c
+  ruleId: 541e6533-3140-4fba-b548-9522a2a84d15
+  name: resetValuesForFuneralExpenses
+  when:
+    triggerType: fields
+    triggers:
+      - field: user.calculate.funeralExpenses
+        event: dataChange
+        _id: 63be4b9b4856b60042bc7d52
+  condition:
+    rootId: 7a84290e-5b64-47b5-bb3f-12c657f4cd72
+    nodes:
+      7a84290e-5b64-47b5-bb3f-12c657f4cd72:
+        id: 7a84290e-5b64-47b5-bb3f-12c657f4cd72
+        type: condition
+        key: "{{user.calculate.funeralExpenses}}"
+        operator: eq
+        value: "false"
+  actions:
+    - field: user.calculate.funeralExpenseAmount
+      property: data
+      value: ""
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 089a60d6-c3ce-4852-ad9e-39ec110c169e
+  ruleId: 54d2686e-c089-4a4c-b1ed-798e298fa730
+  name: setDefaultValues
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: a3339623-6ee9-4d18-a75d-6cd01b8b9188
+    nodes:
+      a3339623-6ee9-4d18-a75d-6cd01b8b9188:
+        id: a3339623-6ee9-4d18-a75d-6cd01b8b9188
+        type: condition
+        key: "{{isUserCalculatedSA}}"
+        operator: eq
+        value: "1"
+  actions:
+    - field: user.calculate.funeralExpenses
+      property: data
+      value: "false"
+    - field: isUserCalculatedSA
+      property: data
+      value: "0"
+    - field: user.calculate.incomeProtection
+      property: data
+      value: "false"
+    - field: user.calculate.debtRepayment
+      property: data
+      value: "false"
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 927ee439-d1e4-4738-a38b-b52cac148b6e
+  ruleId: 6195fef9-26d6-40d7-9824-1cffa347b09b
+  name: removeplaceholderCSS
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 7d3abf73-66db-4468-9c2a-18b04099c391
+    nodes:
+      7d3abf73-66db-4468-9c2a-18b04099c391:
+        id: 7d3abf73-66db-4468-9c2a-18b04099c391
+        type: condition
+        key: "{{dateOfBirthUI}}"
+        operator: exist
+  actions:
+    - field: placeholder
+      property: data
+      value: ""
+  pageId: d2649f3b-4c5e-4ff9-8a59-6eeb1980b169
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 8e0d191b-ffb1-493e-b2f2-246c25c8410c
+  ruleId: 732bd4ac-f3e5-450a-914a-94fbd094a5d6
+  name: showCustomSA
+  when:
+    triggerType: fields
+    triggers:
+      - field: clickSABtn
+        event: onClick
+        _id: 63d9226e98bdec00438015d7
+  condition:
+    isAlwaysTrue: true
+    rootId: 71f6242a-4d61-48fe-bdba-644ebce1d9d6
+    nodes:
+      71f6242a-4d61-48fe-bdba-644ebce1d9d6:
+        id: 71f6242a-4d61-48fe-bdba-644ebce1d9d6
+        type: condition
+  actions:
+    - field: clickHereSection
+      property: hidden
+      value: true
+    - field: customSection
+      property: hidden
+      value: false
+  pageId: cd1b5821-88a8-4c67-a4c4-e42b7e28f858
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: ef66ac9f-e1a0-4ad0-aa5c-074e40bb58de
+  ruleId: bb9bb76f-ca09-47ba-a93b-0e70828f586e
+  name: enableCalculatefromPopup
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 9bddf960-c463-4f8c-91b6-86ea50a25b48
+    nodes:
+      9bddf960-c463-4f8c-91b6-86ea50a25b48:
+        id: 9bddf960-c463-4f8c-91b6-86ea50a25b48
+        type: condition
+        key: "{{enableCalculate}}"
+        operator: eq
+        value: "true"
+  actions:
+    - field: calculateBtnSA
+      property: disabled
+      value: false
+    - field: enableCalculate
+      property: data
+      value: "false"
+    - field: thankYouSec
+      property: hidden
+      value: true
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 4909d18d-f506-4f6b-b395-0eafdfc4fb64
+  ruleId: 4d34a600-5589-45b1-b5d2-b424692538cc
+  name: showOriginalSections
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 7a0fd06d-556d-4a96-aaa6-f90e7e810f40
+    nodes:
+      7a0fd06d-556d-4a96-aaa6-f90e7e810f40:
+        id: 7a0fd06d-556d-4a96-aaa6-f90e7e810f40
+        type: condition
+        key: "{{clickHereClicked}}"
+        operator: eq
+        value: "0"
+  actions:
+    - field: clickHereSection
+      property: hidden
+      value: false
+    - field: customSection
+      property: hidden
+      value: true
+  pageId: cd1b5821-88a8-4c67-a4c4-e42b7e28f858
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 894ac3a4-108f-47d2-ac02-6595ec62ea97
+  ruleId: ed7e0619-1a2b-4848-8eca-fa39e70febf8
+  name: validateAge
+  when:
+    triggerType: anyData
+    triggers:
+      - field: dobNextBtn
+        event: onClick
+        _id: 6380640a4856b60042bbdbf0
+  condition:
+    rootId: f7be3c3c-235a-41fe-a9b5-bda56f6cedea
+    nodes:
+      f7be3c3c-235a-41fe-a9b5-bda56f6cedea:
+        id: f7be3c3c-235a-41fe-a9b5-bda56f6cedea
+        type: group
+        operator: and
+        children:
+          - a16f6e0a-2499-4c16-a09b-d9c972f4680b
+      a16f6e0a-2499-4c16-a09b-d9c972f4680b:
+        id: a16f6e0a-2499-4c16-a09b-d9c972f4680b
+        type: condition
+        key: "{{isAgeApplicable}}"
+        operator: eq
+        value: "false"
+  actions:
+    - field: ageError
+      property: hidden
+      value: false
+    - field: errorcss
+      property: data
+      value: errordate
+  elseDoNegative: true
+  pageId: d2649f3b-4c5e-4ff9-8a59-6eeb1980b169
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: b3e8eeb9-7ca0-429b-a7bf-eee657e29869
+  ruleId: d8574c19-3b7b-48a4-9b90-376a12bf6d11
+  name: showAnnualIncome&OtherPoliciesSec
+  when:
+    triggerType: fields
+    triggers:
+      - field: user.calculate.incomeProtection
+        event: dataChange
+        _id: 63bcf5cf4856b60042bc7458
+      - field: user.calculate.debtRepayment
+        event: dataChange
+        _id: 63bcf5d04856b60042bc745a
+      - field: user.calculate.funeralExpenses
+        event: dataChange
+        _id: 63bcf5d14856b60042bc745c
+  condition:
+    rootId: cda8e381-234c-46ca-819b-7858c2806ce8
+    nodes:
+      db226653-048c-44ed-a58b-1ddb491b1b30:
+        id: db226653-048c-44ed-a58b-1ddb491b1b30
+        type: condition
+        key: "{{user.calculate.funeralExpenses}}"
+        operator: eq
+        value: "true"
+      cda8e381-234c-46ca-819b-7858c2806ce8:
+        id: cda8e381-234c-46ca-819b-7858c2806ce8
+        type: group
+        operator: or
+        children:
+          - db226653-048c-44ed-a58b-1ddb491b1b30
+          - 351609b8-3527-433b-b993-d654f144e5dc
+          - 5b68308b-7114-4d91-b3d8-47b6464f2801
+      351609b8-3527-433b-b993-d654f144e5dc:
+        id: 351609b8-3527-433b-b993-d654f144e5dc
+        type: condition
+        key: "{{user.calculate.debtRepayment}}"
+        operator: eq
+        value: "true"
+      5b68308b-7114-4d91-b3d8-47b6464f2801:
+        id: 5b68308b-7114-4d91-b3d8-47b6464f2801
+        type: condition
+        key: "{{user.calculate.incomeProtection}}"
+        operator: eq
+        value: "true"
+  actions:
+    - field: AnnualIncomeSec
+      property: hidden
+      value: false
+    - field: otherInsuranceSec
+      property: hidden
+      value: false
+    - field: calculateBtnSec
+      property: hidden
+      value: false
+  elseDoNegative: true
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 97948b25-f3ba-44f5-8d59-946eae3e64f4
+  ruleId: d06111c7-f4c8-40f4-b633-66e4d4e9e603
+  name: HideAllSectionsByProtectionType
+  when:
+    triggerType: fields
+    triggers:
+      - field: user.calculate.incomeProtection
+        event: dataChange
+        _id: 63be588e4856b60042bc7ed9
+      - field: user.calculate.debtRepayment
+        event: dataChange
+        _id: 63be588f4856b60042bc7edb
+      - field: user.calculate.funeralExpenses
+        event: dataChange
+        _id: 63be58924856b60042bc7edd
+  condition:
+    rootId: 15349414-d19c-4115-b89c-1a3927934baf
+    nodes:
+      2cfb4a6e-cfc9-4621-8733-01d99c2fb890:
+        id: 2cfb4a6e-cfc9-4621-8733-01d99c2fb890
+        type: condition
+        key: "{{user.calculate.funeralExpenses}}"
+        operator: eq
+        value: "false"
+      15349414-d19c-4115-b89c-1a3927934baf:
+        id: 15349414-d19c-4115-b89c-1a3927934baf
+        type: group
+        operator: and
+        children:
+          - 2cfb4a6e-cfc9-4621-8733-01d99c2fb890
+          - 31d1c1a7-8d7e-4a2e-a230-c4f670bee458
+          - 744e0fb3-ec12-4c77-bc0b-8b0d7586ff2b
+      31d1c1a7-8d7e-4a2e-a230-c4f670bee458:
+        id: 31d1c1a7-8d7e-4a2e-a230-c4f670bee458
+        type: condition
+        key: "{{user.calculate.debtRepayment}}"
+        operator: eq
+        value: "false"
+      744e0fb3-ec12-4c77-bc0b-8b0d7586ff2b:
+        id: 744e0fb3-ec12-4c77-bc0b-8b0d7586ff2b
+        type: condition
+        key: "{{user.calculate.incomeProtection}}"
+        operator: eq
+        value: "false"
+  actions:
+    - field: thankYouSec
+      property: hidden
+      value: true
+    - field: suggestedAmountSec
+      property: hidden
+      value: true
+    - field: user.calculate.annualIncome
+      property: data
+      value: ""
+    - field: user.calculate.totalSumAssured
+      property: data
+      value: ""
+    - field: user.calculate.calculatedSumAssured
+      property: data
+      value: ""
+    - field: sumInsured
+      property: data
+      value: ""
+    - field: totalSumAssuredSec
+      property: hidden
+      value: true
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 051c3107-86eb-4430-a1b3-ed898eeae64c
+  ruleId: fb8e05ad-e875-4960-b202-2740b116c966
+  name: show/hide benefits
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 7351b469-69bd-4332-b862-7b0d149d0b89
+    nodes:
+      7351b469-69bd-4332-b862-7b0d149d0b89:
+        id: 7351b469-69bd-4332-b862-7b0d149d0b89
+        type: condition
+  actions: []
+  pageId: beefc349-a912-4316-a104-9f025dcd188d
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 09006b3d-feb5-4d26-896b-45e5ef7b52d4
+  ruleId: d1d62a9a-6676-477e-8fb6-d97347c3134e
+  name: show/hideBenefits
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 7c1cee77-4e6e-4ecc-981e-76963906eade
+    nodes:
+      f384cb86-ebe5-4ce5-a451-8663bbca800b:
+        id: f384cb86-ebe5-4ce5-a451-8663bbca800b
+        type: condition
+        key: "{{policyType}}"
+        operator: eq
+        value: Whole Life
+      7c1cee77-4e6e-4ecc-981e-76963906eade:
+        id: 7c1cee77-4e6e-4ecc-981e-76963906eade
+        type: group
+        operator: or
+        children:
+          - f384cb86-ebe5-4ce5-a451-8663bbca800b
+          - 97f57ec0-8858-47ab-af1e-c361c484e205
+      97f57ec0-8858-47ab-af1e-c361c484e205:
+        id: 97f57ec0-8858-47ab-af1e-c361c484e205
+        type: group
+        operator: and
+        children:
+          - 8a968842-dfa8-485b-a3d0-7eaa4c32c71f
+          - 901db185-9a11-4780-982d-a6839c04955b
+      8a968842-dfa8-485b-a3d0-7eaa4c32c71f:
+        id: 8a968842-dfa8-485b-a3d0-7eaa4c32c71f
+        type: condition
+        key: "{{product_no}}"
+        operator: exist
+      901db185-9a11-4780-982d-a6839c04955b:
+        id: 901db185-9a11-4780-982d-a6839c04955b
+        type: condition
+        key: "{{product_no}}"
+        operator: eq
+        value: "1"
+  actions:
+    - field: wholeLifeSection
+      property: hidden
+      value: false
+    - field: termLifeSection
+      property: hidden
+      value: true
+  elseDoNegative: true
+  pageId: beefc349-a912-4316-a104-9f025dcd188d
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 31173eef-e46b-43f6-a141-7b562a0f7037
+  ruleId: b07a1ed1-ea85-4f32-a375-4343a2676804
+  name: pageloadsections
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 9379d765-b0eb-4c4e-a195-52b1186112a2
+    nodes:
+      9379d765-b0eb-4c4e-a195-52b1186112a2:
+        id: 9379d765-b0eb-4c4e-a195-52b1186112a2
+        type: condition
+        key: "{{suggestingSumAssured}}"
+        operator: eq
+        value: "0"
+  actions:
+    - field: clickHereSec
+      property: hidden
+      value: false
+    - field: SumAssuredSec
+      property: hidden
+      value: false
+    - field: nextBtnSI
+      property: hidden
+      value: false
+    - field: calculateBtnSec
+      property: hidden
+      value: true
+    - field: orSection
+      property: hidden
+      value: false
+    - field: user.calculate.incomeProtection
+      property: data
+      value: "false"
+    - field: user.calculate.debtRepayment
+      property: data
+      value: "false"
+    - field: user.calculate.funeralExpenses
+      property: data
+      value: "false"
+    - field: protectionTypeSec
+      property: hidden
+      value: true
+    - field: thankYouSec
+      property: hidden
+      value: true
+  pageId: 3457c85d-3842-4a59-a16a-3619141070f7
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: 9b6fe565-9a48-43cc-bf19-1f6b451e342d
+  ruleId: 470d9abe-b3e9-4de3-9c62-f1ae4f9bf7a2
+  name: showHideContactSupport
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 2064a64f-44a0-49f4-8157-4cf2c04ecf46
+    nodes:
+      2064a64f-44a0-49f4-8157-4cf2c04ecf46:
+        id: 2064a64f-44a0-49f4-8157-4cf2c04ecf46
+        type: condition
+        key: "{{customerPortal}}"
+        operator: eq
+        value: Yes
+  actions:
+    - field: contactSupportButton
+      property: hidden
+      value: false
+    - field: publicContactSupportButton
+      property: hidden
+      value: true
+  elseDoNegative: true
+  pageId: 91055421-5ca9-4a63-88bf-fa663e67de34
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+- _id: d1f29e2e-338b-4758-bf98-d04f8bd90142
+  ruleId: 77f90f69-d698-4b1a-b2e6-ed79f2822ac8
+  name: showHide65Column
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 0fee0bd2-bec5-4eef-96e0-ae4c861c5394
+    nodes:
+      0fee0bd2-bec5-4eef-96e0-ae4c861c5394:
+        id: 0fee0bd2-bec5-4eef-96e0-ae4c861c5394
+        type: condition
+        key: "{{age}}"
+        operator: gt
+        value: "50"
+  actions:
+    - field: columnSixtyFive
+      property: hidden
+      value: true
+  elseDoNegative: true
+  pageId: beefc349-a912-4316-a104-9f025dcd188d
+  form: c2808488-ec65-46c6-aaf7-63c4f3684dbc
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
