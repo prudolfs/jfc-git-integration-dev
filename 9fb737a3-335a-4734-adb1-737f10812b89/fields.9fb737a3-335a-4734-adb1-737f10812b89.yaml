@@ -1,0 +1,17 @@
+- _id: 7662ab3d-2289-465d-b8a2-e61779489cb0
+  fieldId: 62ebc8c4-04a6-46c6-843d-77eb72236ca0
+  form: 9fb737a3-335a-4734-adb1-737f10812b89
+  components: []
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  type: panel
+  isDialog: false
+  label: View-273
+  width: 730
+  createdAt: 2024-07-15T14:16:59.207Z

@@ -1,0 +1,39 @@
+_id: 9fb737a3-335a-4734-adb1-737f10812b89
+name: test-commit-form
+description: ""
+rootAction: ""
+shortName: ""
+components:
+  - 62ebc8c4-04a6-46c6-843d-77eb72236ca0
+unlinkedFields: []
+formSettings:
+  customUrls:
+    cdn: ""
+    api: ""
+  stepper:
+    keysToDisableNavigation: []
+    disabledSteps: []
+    steps: []
+  allowedDomains: []
+isLive: true
+isTemplate: false
+company: 0c706fc5-fac4-45d8-b216-7f072a8f10f2
+users:
+  - eb4cb92a-d37e-4729-8784-6a19025d9501
+stagingState: draft
+ranMigrations:
+  - 20220110200338-deleteDuplicates.js
+  - 20220111103009-mustacheExpressions.js
+  - 20220211105753-forms_publishing.js
+  - 20220214152546-forms_publishing.js
+  - 20220426111554-set_ran_migrations.js
+  - 20220506122750-add_imageAssetId_to_fields.js
+  - 20231218161113-content_and_html_show_error_to_error_label.js
+metaModels: []
+swaggerApi: []
+metaModelsFieldsData: []
+formShouldBeCommitted: false
+formShouldBePushed: true
+createdAt: 2024-07-15T14:16:57.985Z
+formGroupId: b6587fe0-bba1-49d7-8b0a-5da6fb480968
+id: 9fb737a3-335a-4734-adb1-737f10812b89
