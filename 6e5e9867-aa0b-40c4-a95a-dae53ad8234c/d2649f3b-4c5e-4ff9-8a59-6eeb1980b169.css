@@ -1,0 +1,11 @@
+.ib-page{
+  width:60% !important;
+  max-width:60% !important;
+}
+
+@media only screen and (max-width: 450px) {
+.ib-page{
+  width:100% !important;
+  max-width:100% !important;
+}
+}

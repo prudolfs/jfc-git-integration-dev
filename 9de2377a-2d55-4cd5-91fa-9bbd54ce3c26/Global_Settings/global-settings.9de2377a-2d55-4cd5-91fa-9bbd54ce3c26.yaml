@@ -1,0 +1,17 @@
+shortName: ""
+description: ""
+users:
+  - 261953b3-8923-437e-953f-4d8084a0248f
+company: 0c706fc5-fac4-45d8-b216-7f072a8f10f2
+customCss: ".test-css .MuiInputBase-input {\r
+
+  background:blue;\r
+
+  font-weight:500;\r
+
+  }"
+error:
+  url: ""
+  redirectMode: false
+  pageId: f193b19b-beff-4e58-addc-2ce93e7f333d
+customCssFile: https://dig-jfc-cnt-test101-assets.sapiens.com/assets/d46d1bc1-78cb-4160-9f4c-da65229e2f83

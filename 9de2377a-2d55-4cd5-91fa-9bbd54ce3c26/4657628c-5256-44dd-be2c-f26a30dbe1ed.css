@@ -1,0 +1,8 @@
+.driver-red-border .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: 0rem !important;
+  box-shadow: 0 0 0 0.05rem rgb(250 0 0 / 90%) !important;
+}
+
+.driver-red-border .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline, .red-border .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+  border: 0.063rem solid #FF0000 !important;
+}

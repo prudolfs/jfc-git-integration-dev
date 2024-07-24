@@ -1,0 +1,3 @@
+& table.MuiTable-root tr th:first-child, table.MuiTable-root tr td:first-child {
+    width: 110px !important;
+}

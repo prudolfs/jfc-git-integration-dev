@@ -1,0 +1,116 @@
+/** Table Card Style **/
+.table-card .MuiPaper-outlined {
+  box-shadow: 0rem 0.313rem 0.625rem rgb(0 0 0 / 25%);
+  border: 0rem;
+  border-radius: 0 0 0.38em 0.38em;
+  overflow-x: auto;
+  
+}
+
+/** Table Header Style **/
+.table-head .MuiTypography-subtitle1 {
+ 
+  font-weight: 700;
+  background-color: #ccc;
+} 
+
+& th {
+
+  font-style: normal;
+  font-weight: 700;
+ 
+  background-color: #ccc;
+ 
+}
+
+
+
+/** Table Body Style **/
+.table-body .MuiTableCell-body {
+  padding: 0.2rem;
+ 
+}
+
+& tr:nth-child(2n) {
+  background-color: rgb(242, 242, 242);
+}
+
+& tr {
+  background-color: #FAFAFA;
+}
+
+& tbody :hover {
+  background-color: #DDDDDD;
+}
+
+& td {
+  border-bottom: 0rem;
+}
+
+& td:first-child {
+  padding-left: 2.2em;
+}
+
+& .MuiInputBase-input {
+  text-align: left;
+  color: #000000;
+  line-height: 0.94em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9pt;
+  padding-left: 0.5em;
+}
+
+& .MuiInputBase-input:hover {
+  background-color: transparent;
+}
+
+& .MuiButton-label {
+  color: #E64E00;
+  font-family: Calibri, san-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0pt;
+  line-height: 0.94em;
+  padding: 0.5rem;
+}    
+
+& .MuiButton-label::before{
+  content:'View';
+  font-size: 9pt;
+}
+
+/** Table Footer Style **/
+& tfoot tr {
+  background-color: #E5E5E5;
+}
+
+& tfoot td {
+  padding: 0rem;
+}
+
+/** Pagination Style **/
+& .MuiTypography-caption {
+  font-family: Calibri, san-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 1.25em;
+  color: #694F7A;
+}
+
+& .MuiSelect-select {
+  min-width: 1.5em;
+  font-size: 12pt;
+  color: #694F7A;
+  min-height: 1em;
+  margin-top: 0.28em;
+}
+
+/** Sort Icon Style **/
+& th .MuiSvgIcon-root {
+  font-size: 1.7em;
+}
+
+
+

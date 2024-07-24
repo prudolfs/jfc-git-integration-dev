@@ -1,0 +1,34 @@
+<div class="coverageCard">
+<div class="plan-details">
+    <div>
+      <span class="float-left card-title">
+      {{coverageSelection.coverPlanSelection.coverPlans.[[coverageSelection.selectedCoverPlanId]].displayName}} Details
+    </ span>
+    </div>
+    <table cellspacing = "0" cellpadding = "0" class = "cover-table-border table">
+    <thead>
+    <tr>
+    <td> Cover List</ td>
+    <td> Insured Amount</ td>
+    <td> Excess</ td>
+    <td> Yearly Premium</ td>
+    <td> Written Premium</ td>
+    </ tr>
+    </ thead>
+    <tbody>{{#coverageSelection.coverPlanSelection.coverPlans.[[coverageSelection.selectedCoverPlanId]].covers}}<tr>
+    <td>{{{displayName}}}</ td>
+    <td> {{{PORTAL_CURRENCY_SYMBOL}}}{{{insuredAmount}}}</ td>
+    <td> {{{PORTAL_CURRENCY_SYMBOL}}}{{{excessAmount}}}</ td>
+    <td> {{{PORTAL_CURRENCY_SYMBOL}}}{{{yearlyAmount}}}</ td>
+    <td> {{{PORTAL_CURRENCY_SYMBOL}}}{{{writtenAmount}}}</ td>
+    </ tr>{{ / coverageSelection.coverPlanSelection.coverPlans.[[coverageSelection.selectedCoverPlanId]].covers}}<tr class = "plan-detail-final-row">
+    <td> Total Premium</ td>
+    <td></ td>
+    <td></td>
+    <td> {{{PORTAL_CURRENCY_SYMBOL}}}{{{coverageSelection.coverPlanSelection.coverPlans.[[coverageSelection.selectedCoverPlanId]].totalPremium}}}</ td>
+    <td> {{{PORTAL_CURRENCY_SYMBOL}}}{{{coverageSelection.coverPlanSelection.coverPlans.[[coverageSelection.selectedCoverPlanId]].totalPremium}}}</ td>
+    </ tr>
+    </ tbody>
+    </ table>
+    </ div>
+    </ div>

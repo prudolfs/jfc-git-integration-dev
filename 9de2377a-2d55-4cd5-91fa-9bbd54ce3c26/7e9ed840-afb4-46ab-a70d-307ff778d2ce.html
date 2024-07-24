@@ -1,0 +1,29 @@
+{{#moment.en}}DD-MM-YYYY hh:mm:ss|{{dob}}{{/moment.en}}
+
+
+<h1>Note:</h1>
+
+
+check with date variants:
+
+check for the below dates:
+
+01/01/1970,
+
+02/01/1970, 
+
+03/01/1970,
+
+04/01/1970, 
+
+30/12/1969, 
+
+31/12/1969 
+
+selected mindate : 
+
+{{#date.subtract}}{{#moment.en}}X{{/moment.en}}|5,years{{/date.subtract}}
+
+& max date: maxDate - 
+
+{{#date.add}}{{#moment.en}}X{{/moment.en}}|5,years{{/date.add}}

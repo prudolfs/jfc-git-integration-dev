@@ -1,0 +1,109 @@
+/*& {*/
+/*  margin-top:20px;*/
+/*}*/
+& * {
+      font-family: 'Inter' !important;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+     color: #00287B;
+  }
+
+& .cs-html-field-container{
+  width: 100%;
+}
+.coverageCard {
+  padding-left: unset;
+}
+.coverageCard .card-body {
+  padding: 0;
+}
+.coverageCard .content.collapse.show {
+  padding-left: unset;
+}
+.coverageCard .cover-table-border, .coverageCard .cover-table-border:hover {
+  padding: 0 0 0 0px;
+  background: 0% 0% no-repeat padding-box padding-box #fff;
+  border: 1px solid #b4babf;
+  border-radius: 0.5rem;
+  border-collapse: unset;
+  color: #182330;
+}
+
+.coverageCard #coverSelectionSection {
+  box-shadow: unset;
+  padding-bottom: unset;
+  margin-bottom: 0.95rem;
+}
+
+.coverageCard .plan-detail-final-row {
+  font-weight: bold;
+
+}
+
+.table {
+  width: 100%;
+  margin:-2px
+ 
+}
+
+.table td, .table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+   
+}
+
+.coverageCard .plan-details .card-title{
+  padding-bottom: 1rem;
+  display: block;
+  text-align: left;
+  font-weight: 600;
+   font-size: 18px;
+   line-height: 22px;
+   color: #00287B;
+
+}
+& thead tr td{
+ 
+    background: #E6EAF2;
+    color: #01133A;
+    font-weight: 600;
+}
+& thead tr td:first-child{
+ border-top-left-radius:0.5rem
+}
+& thead tr td:last-child{
+ border-top-right-radius:0.5rem
+}
+
+
+
+@media (max-width: 767px) {
+  .coverageCard {
+    padding: unset;
+    max-width: 100vw;
+    overflow: auto;
+ }
+}
+
+@media (min-width: 768px) {
+  .coverageCard .plan-details {
+    color: #22293a;
+  }
+  .coverageCard .plan-details thead {
+    color: #b4babf;
+  }
+  .coverageCard .plan-details thead td {
+    border: none;
+  }
+  .coverageCard .plan-details :hover {
+    /*background: unset;*/
+    outline: none;
+  }
+}
+
+& .plan-detail-final-row td{
+  font-weight: bold;
+  
+}

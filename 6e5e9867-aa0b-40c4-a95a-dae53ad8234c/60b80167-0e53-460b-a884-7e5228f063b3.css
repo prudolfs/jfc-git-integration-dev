@@ -1,0 +1,12 @@
+&{ 
+  margin-top:18px;
+}
+& span svg{
+  position: absolute;
+  left: 2px;
+  top: 2px;
+}
+.ageErrorMsg{
+  color: #820D0D;
+  font-size: 13px;
+}

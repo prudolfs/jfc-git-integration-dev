@@ -1,0 +1,287 @@
+- _id: 2b417797-948d-4375-9a8b-99ae09667f4c
+  ruleId: e9fd2b38-91ae-4813-a84e-5fbe639dc1de
+  name: onDropdownchange
+  enabled: true
+  when:
+    triggerType: fields
+    triggers:
+      - field: dropDown
+        event: dataChange
+        _id: 65aa5269b1c4edc32e1414c1
+  condition:
+    isAlwaysTrue: true
+    rootId: f56f46bc-adca-4682-b2d3-36f2db6a34ee
+    nodes:
+      f56f46bc-adca-4682-b2d3-36f2db6a34ee:
+        id: f56f46bc-adca-4682-b2d3-36f2db6a34ee
+        type: condition
+  actions:
+    - field: TextField1
+      property: data
+      value: Policy holder
+    - field: TextField2
+      property: data
+      value: "12312321"
+  pageId: c80f5840-2895-4cca-9137-0c214859528c
+  form: 9de2377a-2d55-4cd5-91fa-9bbd54ce3c26
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+- _id: 99e9963f-9fee-49cc-8d89-62ab4af43833
+  ruleId: bb6572e1-5f30-41ec-a2ed-ac4317bc0f3f
+  name: Expand Accordian
+  enabled: true
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 3dd04caf-cff0-4c60-b533-fb3087c42d47
+    nodes:
+      3dd04caf-cff0-4c60-b533-fb3087c42d47:
+        id: 3dd04caf-cff0-4c60-b533-fb3087c42d47
+        type: condition
+        key: "{{TextField1}}"
+        operator: eq
+        value: hi
+  actions:
+    - field: accordion-506
+      property: defaultOpen
+      value: true
+    - field: button-348
+      property: disabled
+      value: true
+    - field: TextField2
+      property: hidden
+      value: true
+  elseDoNegative: true
+  pageId: c80f5840-2895-4cca-9137-0c214859528c
+  form: 9de2377a-2d55-4cd5-91fa-9bbd54ce3c26
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+- _id: 5591992b-db29-4905-9246-a2675a86ab84
+  ruleId: 4d2badec-1afb-4f79-a2ef-ef863a827e3d
+  name: show dialog
+  when:
+    triggerType: fields
+    triggers:
+      - field: slider-165
+        event: dataChange
+        _id: 65b742afa6f63e0b1bb0a40a
+  condition:
+    rootId: b5accbf9-4e5d-4fc2-9d1a-1f346c433cd1
+    nodes:
+      b5accbf9-4e5d-4fc2-9d1a-1f346c433cd1:
+        id: b5accbf9-4e5d-4fc2-9d1a-1f346c433cd1
+        type: condition
+        key: "{{{slider-165}}}"
+        operator: gte
+        value: "5000"
+  actions:
+    - property: submit
+    - field: selectboxeselement-161
+      property: data
+      value: "true"
+  pageId: b4519a38-7b46-470a-aa71-60b23b01aa13
+  form: 9de2377a-2d55-4cd5-91fa-9bbd54ce3c26
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+- _id: eab2f0de-ee50-489e-b6e4-f792c8e84cd3
+  ruleId: 512e7833-7c37-4c32-8023-0d5e3d6e1463
+  name: setDataOfSlider
+  when:
+    triggerType: fields
+    triggers:
+      - field: textfield-460
+        event: dataChange
+        _id: 65b743b6a6f63e0b1bb0a43f
+  condition:
+    rootId: 8d52fc1f-71bf-4fd2-8525-800fd5dab19a
+    nodes:
+      8d52fc1f-71bf-4fd2-8525-800fd5dab19a:
+        id: 8d52fc1f-71bf-4fd2-8525-800fd5dab19a
+        type: condition
+        key: "{{textfield-460}}"
+        operator: eq
+        value: hi
+  actions:
+    - field: slider-165
+      property: data
+      value: "6000"
+  pageId: b4519a38-7b46-470a-aa71-60b23b01aa13
+  form: 9de2377a-2d55-4cd5-91fa-9bbd54ce3c26
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+- _id: e1360da2-1aff-4299-9177-2114510151bf
+  ruleId: 395406c1-7867-462f-a300-94dafd4dae90
+  name: "Slider Dialog "
+  when:
+    triggerType: fields
+    triggers:
+      - field: button-886
+        event: onClick
+        _id: 65b744f7a6f63e0b1bb0a469
+  condition:
+    isAlwaysTrue: true
+    rootId: 5cbd9c79-632c-4f2f-974d-916456ee4c2f
+    nodes:
+      5cbd9c79-632c-4f2f-974d-916456ee4c2f:
+        id: 5cbd9c79-632c-4f2f-974d-916456ee4c2f
+        type: condition
+  actions:
+    - field: slider-165
+      property: data
+      value: "1000"
+    - property: submit
+  pageId: 296771e5-8fda-434d-b04f-745768e54029
+  form: 9de2377a-2d55-4cd5-91fa-9bbd54ce3c26
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+- _id: bd0a4e2c-dff2-4c5f-a061-267a35802dea
+  ruleId: 077de36c-cc63-4918-8248-57c79ef2ac06
+  name: checkBooleanVariable1
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 4fe0cc3b-07c3-47b8-afe1-707f32a36c8e
+    nodes:
+      4fe0cc3b-07c3-47b8-afe1-707f32a36c8e:
+        id: 4fe0cc3b-07c3-47b8-afe1-707f32a36c8e
+        type: condition
+        key: "{{selectboxeselement-885}}"
+        operator: eq
+        value: "1"
+  actions:
+    - field: textfield-767
+      property: hidden
+      value: true
+  elseDoNegative: true
+  pageId: c80f5840-2895-4cca-9137-0c214859528c
+  form: 9de2377a-2d55-4cd5-91fa-9bbd54ce3c26
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+- _id: a4708d93-9a0a-4541-b00a-ce4654247bb4
+  ruleId: 37b7b693-7229-457f-8a48-b4b5791774b2
+  name: checkBooleanVariableTrue
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: ddf87549-79e8-4768-9cc3-c3dcb282a23e
+    nodes:
+      ddf87549-79e8-4768-9cc3-c3dcb282a23e:
+        id: ddf87549-79e8-4768-9cc3-c3dcb282a23e
+        type: condition
+        key: "{{selectboxeselement-690}}"
+        operator: eq
+        value: "true"
+  actions:
+    - field: textarea-225
+      property: hidden
+      value: true
+  elseDoNegative: true
+  pageId: c80f5840-2895-4cca-9137-0c214859528c
+  form: 9de2377a-2d55-4cd5-91fa-9bbd54ce3c26
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+- _id: 3d6ceadd-e2b4-4e0b-8762-25e8219400e7
+  ruleId: 647f7b9e-1b94-42f3-b607-767005f43f97
+  name: textFieldBooleanValue
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: 2f2df4d4-d3a5-425f-bea4-58da1e638c79
+    nodes:
+      2f2df4d4-d3a5-425f-bea4-58da1e638c79:
+        id: 2f2df4d4-d3a5-425f-bea4-58da1e638c79
+        type: condition
+        key: "{{textfieldA}}"
+        operator: eq
+        value: "true"
+  actions:
+    - field: textfieldB
+      property: disabled
+      value: true
+  elseDoNegative: true
+  pageId: c80f5840-2895-4cca-9137-0c214859528c
+  form: 9de2377a-2d55-4cd5-91fa-9bbd54ce3c26
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+- _id: afe787fa-3681-4578-9032-2b9eb24eefc4
+  ruleId: fdef01a0-9f22-4cad-8993-6e0f66caec23
+  name: showText
+  when:
+    triggerType: anyData
+    triggers: []
+  condition:
+    rootId: a3e72681-30a2-46d1-865a-60fdd10eb903
+    nodes:
+      a3e72681-30a2-46d1-865a-60fdd10eb903:
+        id: a3e72681-30a2-46d1-865a-60fdd10eb903
+        type: condition
+        key: "{{showText}}"
+        operator: eq
+        value: yes
+  actions:
+    - field: textSection
+      property: hidden
+      value: false
+  elseDoNegative: true
+  pageId: 68ff446e-9116-450c-8659-dc40c6a4cd4c
+  form: 9de2377a-2d55-4cd5-91fa-9bbd54ce3c26
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js

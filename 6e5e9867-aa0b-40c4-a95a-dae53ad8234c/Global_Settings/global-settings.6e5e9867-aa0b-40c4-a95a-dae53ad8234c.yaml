@@ -1,0 +1,625 @@
+shortName: ""
+description: ""
+users:
+  - 261953b3-8923-437e-953f-4d8084a0248f
+tags: null
+company: 0c706fc5-fac4-45d8-b216-7f072a8f10f2
+customCss: "body{\r
+
+  \  overflow: auto  !important;\r
+
+  \  background: rgb(250, 250, 250) !important;\r
+
+  }\r
+
+  .container-centered > div {\r
+
+  \  margin: 16px 0 !important;\r
+
+  }\r
+
+  /*.ib-page{*/\r
+
+  /*  width:80% !important;*/\r
+
+  /*  max-width:80% !important;*/\r
+
+  /*  @media only screen and (max-width: 1440px) {*/\r
+
+  \  \r
+
+  /*}*/\r
+
+  /*}*/\r
+
+  \r
+
+  .MuiPaper-rounded{\r
+
+  \  padding:0px!important;\r
+
+  \  border-radius:20px!important;\r
+
+  \  max-height: fit-content !important;\r
+
+  }\r
+
+  \r
+
+  .p0 {\r
+
+  \  padding: 0rem;\r
+
+  }\r
+
+  \r
+
+  .m0 {\r
+
+  \  margin: 0rem;\r
+
+  }\r
+
+  \r
+
+  .pt0 {\r
+
+  \ padding-top: 0rem; \r
+
+  }\r
+
+  \r
+
+  .pl0 {\r
+
+  \ padding-left: 0rem; \r
+
+  }\r
+
+  \r
+
+  .genderHeader{\r
+
+  \    width: 588px;\r
+
+  /*height: 40px;*/\r
+
+  font-family: 'Montserrat';\r
+
+  font-style: normal;\r
+
+  font-weight: 500;\r
+
+  font-size: 14px !important;\r
+
+  line-height: 22px;\r
+
+  color: #1E4452 !important;\r
+
+  }\r
+
+  \r
+
+  .needAnalysisHeader {\r
+
+  \  /*width: 652px;*/\r
+
+  height: 24px;\r
+
+  font-family: 'Inter';\r
+
+  font-style: normal;\r
+
+  font-weight: 600;\r
+
+  font-size: 16px;\r
+
+  line-height: 24px;\r
+
+  letter-spacing: 0.025em;\r
+
+  text-transform: uppercase;\r
+
+  color: #0284C7;\r
+
+  }\r
+
+  \r
+
+  .mainHeader {\r
+
+  \  margin-top: 16px;\r
+
+  \  margin-bottom: 16px;\r
+
+  \  /*width: 652px;*/\r
+
+  \  /*height: 32px;*/\r
+
+  font-family: 'Montserrat';\r
+
+  font-style: normal;\r
+
+  font-weight: 700;\r
+
+  font-size: 26px;\r
+
+  line-height: 32px;\r
+
+  color: #005F7F;;\r
+
+  }\r
+
+  \r
+
+  .helpText {\r
+
+  \  /*width: 652px;*/\r
+
+  height: 24px;\r
+
+  margin-bottom: 64px;\r
+
+  font-family: 'Montserrat';\r
+
+  font-style: normal;\r
+
+  font-weight: 500;\r
+
+  font-size: 16px;\r
+
+  line-height: 22px;\r
+
+  color: #272727;\r
+
+  }\r
+
+  \r
+
+  .date-picker .MuiFormControl-root{\r
+
+  \  margin-top: 0px;\r
+
+  }\r
+
+  .date-picker .MuiSvgIcon-root{\r
+
+  \  font-size: 1.65rem !important;\r
+
+  \  margin-top: -3px !important;\r
+
+  }\r
+
+  \r
+
+  .date-picker .MuiInputBase-root::before, \r
+
+  .date-picker .MuiInputBase-root::after, \r
+
+  .date-picker .MuiFormControl-root::before,\r
+
+  .date-picker .MuiFormControl-root::after\r
+
+  {\r
+
+  \  display: none !important;\r
+
+  }\r
+
+  .date-picker .MuiInput-formControl {\r
+
+  \    width: 320px;\r
+
+  \    height: 56px;\r
+
+  \    background: #FFFFFF;\r
+
+  \    border: 1px solid #D1D5DB;\r
+
+  \    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);\r
+
+  \    border-radius: 6px;\r
+
+  }\r
+
+  .date-picker .MuiFormHelperText-root.Mui-error {\r
+
+  \    color: #ff6060;\r
+
+  }\r
+
+  \r
+
+  .date-picker .MuiInputBase-input {\r
+
+  \  padding-left: 1rem;\r
+
+  }\r
+
+  \r
+
+  .date-picker .MuiInputBase-input::placeholder {\r
+
+  \  color: rgb(52, 52, 52);\r
+
+  \  font-style: normal;\r
+
+  \  font-weight: 400;\r
+
+  \  font-size: 12pt;\r
+
+  \  line-height: 18pt;\r
+
+  \  letter-spacing: 0.01rem;\r
+
+  \  opacity: 1;\r
+
+  }\r
+
+  \r
+
+  \r
+
+  .errordate .MuiInput-formControl {\r
+
+  \    border: 1px solid red;\r
+
+  }\r
+
+  \r
+
+  /*.radiobtn Button {*/\r
+
+  /*    align-items: center;*/\r
+
+  /*   width: 144px;*/\r
+
+  /*   height:40px;*/\r
+
+  /*   border: 1px solid #D1D5DB;*/\r
+
+  /*background-color: white !important;*/\r
+
+  /*}*/\r
+
+  \r
+
+  \r
+
+  .radiobtn {\r
+
+  \   width: 144px !important;\r
+
+  \   height:40px;\r
+
+  \   background: #FFFFFF;\r
+
+  \   border: 1px solid #979797;\r
+
+  \   border-radius: 3px;\r
+
+  \   padding-left:16px;\r
+
+  }\r
+
+  \r
+
+  .ageErrorMsg {\r
+
+  \  margin-top:18px;\r
+
+  \  padding-left:10px;\r
+
+  \  font-family: 'Montserrat';\r
+
+  \  font-style: normal;\r
+
+  \  font-weight: 400;\r
+
+  \  font-size: 14px;\r
+
+  \  line-height: 20px;\r
+
+  \  color: #991B1B;\r
+
+  }\r
+
+  \r
+
+  .backBtn Button {\r
+
+  \  padding: 12px 24px;\r
+
+  \  width: 148px;\r
+
+  \  height: 48pxpx;\r
+
+  \  background: #E3E3E3;\r
+
+  \  border-radius: 24px;\r
+
+  \  background-image:
+  url(\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb\
+  3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3\
+  ZnIj4NCjxwYXRoIGQ9Ik0xNS4wMDA1IDcuMDAwMjJIMy44MzA0N0w4LjcxMDQ3IDIuMTIwMjFDOS4\
+  xMDA0NyAxLjczMDIxIDkuMTAwNDcgMS4wOTAyMSA4LjcxMDQ3IDAuNzAwMjE1QzguMzIwNDcgMC4z\
+  MTAyMTUgNy42OTA0NyAwLjMxMDIxNSA3LjMwMDQ3IDAuNzAwMjE1TDAuNzEwNDY5IDcuMjkwMjJDM\
+  C4zMjA0NjkgNy42ODAyMSAwLjMyMDQ2OSA4LjMxMDIxIDAuNzEwNDY5IDguNzAwMjFMNy4zMDA0Ny\
+  AxNS4yOTAyQzcuNjkwNDcgMTUuNjgwMiA4LjMyMDQ3IDE1LjY4MDIgOC43MTA0NyAxNS4yOTAyQzk\
+  uMTAwNDcgMTQuOTAwMiA5LjEwMDQ3IDE0LjI3MDIgOC43MTA0NyAxMy44ODAyTDMuODMwNDcgOS4w\
+  MDAyMUgxNS4wMDA1QzE1LjU1MDUgOS4wMDAyMSAxNi4wMDA1IDguNTUwMjEgMTYuMDAwNSA4LjAwM\
+  DIyQzE2LjAwMDUgNy40NTAyMSAxNS41NTA1IDcuMDAwMjIgMTUuMDAwNSA3LjAwMDIyWiIgZmlsbD\
+  0iIzI3MjcyNyIvPg0KPC9zdmc+DQo=\");\r
+
+  \  background-repeat: no-repeat;\r
+
+  \  background-position-x: 22px;\r
+
+  \  background-position-y: 16px;\r
+
+  }\r
+
+  \r
+
+  .backBtn Button:hover {\r
+
+  \  background: #E3E3E3;\r
+
+  \  background-image:
+  url(\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb\
+  3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3\
+  ZnIj4NCjxwYXRoIGQ9Ik0xNS4wMDA1IDcuMDAwMjJIMy44MzA0N0w4LjcxMDQ3IDIuMTIwMjFDOS4\
+  xMDA0NyAxLjczMDIxIDkuMTAwNDcgMS4wOTAyMSA4LjcxMDQ3IDAuNzAwMjE1QzguMzIwNDcgMC4z\
+  MTAyMTUgNy42OTA0NyAwLjMxMDIxNSA3LjMwMDQ3IDAuNzAwMjE1TDAuNzEwNDY5IDcuMjkwMjJDM\
+  C4zMjA0NjkgNy42ODAyMSAwLjMyMDQ2OSA4LjMxMDIxIDAuNzEwNDY5IDguNzAwMjFMNy4zMDA0Ny\
+  AxNS4yOTAyQzcuNjkwNDcgMTUuNjgwMiA4LjMyMDQ3IDE1LjY4MDIgOC43MTA0NyAxNS4yOTAyQzk\
+  uMTAwNDcgMTQuOTAwMiA5LjEwMDQ3IDE0LjI3MDIgOC43MTA0NyAxMy44ODAyTDMuODMwNDcgOS4w\
+  MDAyMUgxNS4wMDA1QzE1LjU1MDUgOS4wMDAyMSAxNi4wMDA1IDguNTUwMjEgMTYuMDAwNSA4LjAwM\
+  DIyQzE2LjAwMDUgNy40NTAyMSAxNS41NTA1IDcuMDAwMjIgMTUuMDAwNSA3LjAwMDIyWiIgZmlsbD\
+  0iIzk3NDdmZiIvPg0KPC9zdmc+DQo=\");\r
+
+  \  background-repeat: no-repeat;\r
+
+  \  background-position-x: 22px;\r
+
+  \  background-position-y: 16px;\r
+
+  }\r
+
+  \r
+
+  .nextBtn Button {\r
+
+  \  padding: 12px 24px;\r
+
+  \  width: 116px;\r
+
+  \  height: 51px;\r
+
+  \  background: #F88D2B;\r
+
+  \  border-radius: 24px;\r
+
+  \  background-image:
+  url(\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb\
+  3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3\
+  ZnIj4NCjxwYXRoIGQ9Ik0xIDkuMDAwMjFIMTIuMTdMNy4yOSAxMy44ODAyQzYuOSAxNC4yNzAyIDY\
+  uOSAxNC45MTAyIDcuMjkgMTUuMzAwMkM3LjY4IDE1LjY5MDIgOC4zMSAxNS42OTAyIDguNyAxNS4z\
+  MDAyTDE1LjI5IDguNzEwMjFDMTUuNjggOC4zMjAyMSAxNS42OCA3LjY5MDIyIDE1LjI5IDcuMzAwM\
+  jJMOC43MSAwLjcwMDIxNUM4LjMyIDAuMzEwMjE1IDcuNjkgMC4zMTAyMTUgNy4zIDAuNzAwMjE1Qz\
+  YuOTEgMS4wOTAyMSA2LjkxIDEuNzIwMjIgNy4zIDIuMTEwMjJMMTIuMTcgNy4wMDAyMkgxQzAuNDU\
+  gNy4wMDAyMiAwIDcuNDUwMjEgMCA4LjAwMDIyQzAgOC41NTAyMSAwLjQ1IDkuMDAwMjEgMSA5LjAw\
+  MDIxWiIgZmlsbD0id2hpdGUiLz4NCjwvc3ZnPg==\");\r
+
+  \  background-repeat: no-repeat;\r
+
+  \  background-position-x: 75px;\r
+
+  \  background-position-y: 15px;\r
+
+  }\r
+
+  \r
+
+  \r
+
+  .nextBtn Button:hover {\r
+
+  \  background: #F88D2B;\r
+
+  \  background-image:
+  url(\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb\
+  3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3\
+  ZnIj4NCjxwYXRoIGQ9Ik0xIDkuMDAwMjFIMTIuMTdMNy4yOSAxMy44ODAyQzYuOSAxNC4yNzAyIDY\
+  uOSAxNC45MTAyIDcuMjkgMTUuMzAwMkM3LjY4IDE1LjY5MDIgOC4zMSAxNS42OTAyIDguNyAxNS4z\
+  MDAyTDE1LjI5IDguNzEwMjFDMTUuNjggOC4zMjAyMSAxNS42OCA3LjY5MDIyIDE1LjI5IDcuMzAwM\
+  jJMOC43MSAwLjcwMDIxNUM4LjMyIDAuMzEwMjE1IDcuNjkgMC4zMTAyMTUgNy4zIDAuNzAwMjE1Qz\
+  YuOTEgMS4wOTAyMSA2LjkxIDEuNzIwMjIgNy4zIDIuMTEwMjJMMTIuMTcgNy4wMDAyMkgxQzAuNDU\
+  gNy4wMDAyMiAwIDcuNDUwMjEgMCA4LjAwMDIyQzAgOC41NTAyMSAwLjQ1IDkuMDAwMjEgMSA5LjAw\
+  MDIxWiIgZmlsbD0iIzk3NDdmZiIvPg0KPC9zdmc+\");\r
+
+  \  background-repeat: no-repeat;\r
+
+  \  background-position-x: 75px;\r
+
+  \  background-position-y: 15px;\r
+
+  }\r
+
+  \r
+
+  .nextBtn button:disabled{\r
+
+  \  background: #F9D1B6;\r
+
+  \  background-image:
+  url(\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb\
+  3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3\
+  ZnIj4NCjxwYXRoIGQ9Ik0xIDkuMDAwMjFIMTIuMTdMNy4yOSAxMy44ODAyQzYuOSAxNC4yNzAyIDY\
+  uOSAxNC45MTAyIDcuMjkgMTUuMzAwMkM3LjY4IDE1LjY5MDIgOC4zMSAxNS42OTAyIDguNyAxNS4z\
+  MDAyTDE1LjI5IDguNzEwMjFDMTUuNjggOC4zMjAyMSAxNS42OCA3LjY5MDIyIDE1LjI5IDcuMzAwM\
+  jJMOC43MSAwLjcwMDIxNUM4LjMyIDAuMzEwMjE1IDcuNjkgMC4zMTAyMTUgNy4zIDAuNzAwMjE1Qz\
+  YuOTEgMS4wOTAyMSA2LjkxIDEuNzIwMjIgNy4zIDIuMTEwMjJMMTIuMTcgNy4wMDAyMkgxQzAuNDU\
+  gNy4wMDAyMiAwIDcuNDUwMjEgMCA4LjAwMDIyQzAgOC41NTAyMSAwLjQ1IDkuMDAwMjEgMSA5LjAw\
+  MDIxWiIgZmlsbD0id2hpdGUiLz4NCjwvc3ZnPg==\");\r
+
+  \  background-repeat: no-repeat;\r
+
+  \  background-position-x: 75px;\r
+
+  \  background-position-y: 15px;\r
+
+  }\r
+
+  \r
+
+  .previousLabel{\r
+
+  \  font-family: 'Montserrat';\r
+
+  \  padding-left:10px;\r
+
+  font-style: normal;\r
+
+  font-weight: 700;\r
+
+  font-size: 16px;\r
+
+  line-height: 22px;\r
+
+  color: #272727;\r
+
+  }\r
+
+  .nextLabel{\r
+
+  \  font-family: 'Montserrat';\r
+
+  \  padding-right:10px;\r
+
+  font-style: normal;\r
+
+  font-weight: 700;\r
+
+  font-size: 16px;\r
+
+  line-height: 22px;\r
+
+  color: #FFFFFF;\r
+
+  }\r
+
+  .MuiBackdrop-root {\r
+
+  \  position: fixed !important;\r
+
+  }\r
+
+  \r
+
+  .stepperSection {\r
+
+  \  /*margin-left:10px;*/\r
+
+  \  /*margin-top:50px;*/\r
+
+  \    background: #E9F7FB !important;\r
+
+  box-shadow: 0px 1px 1px rgba(30, 68, 82, 0.2), 0px 0px 1px rgba(30, 68, 82,
+  0.2);\r
+
+  border-radius: 21px;\r
+
+  /*left:1% !important;*/\r
+
+  /*top: 30% !important;*/\r
+
+  /*position:absolute !important;*/\r
+
+  /*width:25% !important;*/\r
+
+  \r
+
+  }\r
+
+  @media only screen and (min-width: 768px) {\r
+
+  \  \r
+
+  .stepperSection {\r
+
+  \  margin-left:10px;\r
+
+  \  margin-top:50px;\r
+
+  \    background: #E9F7FB !important;\r
+
+  box-shadow: 0px 1px 1px rgba(30, 68, 82, 0.2), 0px 0px 1px rgba(30, 68, 82,
+  0.2);\r
+
+  border-radius: 21px;\r
+
+  left:1% !important;\r
+
+  top: 30% !important;\r
+
+  position:absolute !important;\r
+
+  width:25% !important;\r
+
+  \r
+
+  }\r
+
+  \  \r
+
+  .cs-section-container{\r
+
+  \  position: unset !important;\r
+
+  }\r
+
+  }"
+header:
+  content: >-
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+  _id: 65df3becd6899a414832f1ea
+theme:
+  palette:
+    light:
+      primary:
+        main: "#326f87"
+        light: rgb(91, 139, 159)
+        dark: rgb(35, 77, 94)
+        contrastText: "#fff"
+    dark:
+      primary:
+        main: "#0284c7"
+        light: rgb(52, 156, 210)
+        dark: rgb(1, 92, 139)
+        contrastText: "#fff"
+error:
+  url: ""
+  redirectMode: false
+  pageId: 91055421-5ca9-4a63-88bf-fa663e67de34
+envVariables:
+  ACE_API_BASE_URL:
+    draft: https://dev-republic-server.sapienspaas.com
+    test: https://dev-republic-server.sapienspaas.com
+    production: https://dev-republic-server.sapienspaas.com
+  headersUserAgent:
+    draft: Sapiens
+    test: Sapiens
+    production: Sapiens
+  republicUrl:
+    draft: https://republiclifett.com/
+    test: https://republiclifett.com/
+    production: https://republiclifett.com/
+flowActionTimeout:
+  timeout: "300000"

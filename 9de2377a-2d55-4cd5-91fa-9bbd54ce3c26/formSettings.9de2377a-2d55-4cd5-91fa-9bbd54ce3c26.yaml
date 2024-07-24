@@ -1,0 +1,157 @@
+allowedDomains: []
+customUrls:
+  cdn: ""
+  api: ""
+customCss: ".test-css .MuiInputBase-input {\r
+
+  background:blue;\r
+
+  font-weight:500;\r
+
+  }"
+error:
+  url: ""
+  redirectMode: false
+  pageId: f193b19b-beff-4e58-addc-2ce93e7f333d
+stepper:
+  steps: []
+  keysToDisableNavigation: []
+  disabledSteps: []
+variables:
+  submissionData:
+    b11ac2eb-3b18-4530-a9c1-bd2556df685b:
+      name: TextField1
+      id: b11ac2eb-3b18-4530-a9c1-bd2556df685b
+      dataType: text
+      varType: submissionData
+    c14e8c65-e4ac-4271-80d9-11c30ad16aa3:
+      name: TextField2
+      id: c14e8c65-e4ac-4271-80d9-11c30ad16aa3
+      dataType: text
+      varType: submissionData
+    ba60702f-166f-4ad1-aa38-e377047e0d05:
+      name: dropDown
+      id: ba60702f-166f-4ad1-aa38-e377047e0d05
+      dataType: text
+      varType: submissionData
+    d43b6917-851d-4542-9b0f-ec130c2bfe72:
+      name: datetime-245
+      id: d43b6917-851d-4542-9b0f-ec130c2bfe72
+      dataType: date
+      varType: submissionData
+    d6111fae-9421-48d0-9d1f-b52ed882e28d:
+      name: lookup-679
+      id: d6111fae-9421-48d0-9d1f-b52ed882e28d
+      dataType: text
+      varType: submissionData
+    29ccbf10-bc9c-4998-8597-3e7ac5db3121:
+      name: select-539
+      id: 29ccbf10-bc9c-4998-8597-3e7ac5db3121
+      dataType: text
+      varType: submissionData
+    443983d8-d3f3-4205-b437-de9b5ba2e1bf:
+      name: selectboxeselement-885
+      id: 443983d8-d3f3-4205-b437-de9b5ba2e1bf
+      dataType: text
+      varType: submissionData
+    ff817685-5e26-4cc0-9640-844ddb7eb070:
+      name: remoteComponent-435
+      id: ff817685-5e26-4cc0-9640-844ddb7eb070
+      dataType: text
+      varType: submissionData
+    7ebb54cf-a185-4481-9a79-21a7393a7f39:
+      name: remoteComponent-567
+      id: 7ebb54cf-a185-4481-9a79-21a7393a7f39
+      dataType: text
+      varType: submissionData
+    09a45013-d07b-4a7e-aa1d-a0311440eaed:
+      name: remoteComponent-775
+      id: 09a45013-d07b-4a7e-aa1d-a0311440eaed
+      dataType: text
+      varType: submissionData
+    6865d029-9e24-4467-ab9f-43e77c959b99:
+      name: selectboxeselement-161
+      id: 6865d029-9e24-4467-ab9f-43e77c959b99
+      dataType: text
+      varType: submissionData
+    3f9296ba-25a5-45fc-b8bb-f42251b53df2:
+      name: textfield-460
+      id: 3f9296ba-25a5-45fc-b8bb-f42251b53df2
+      dataType: text
+      varType: submissionData
+    401620fa-9141-436c-a990-ddf1ddea8af7:
+      name: textfield-734
+      id: 401620fa-9141-436c-a990-ddf1ddea8af7
+      dataType: text
+      varType: submissionData
+    89170509-13a6-436e-a1b5-a3d05de93b26:
+      name: "{{TextField1}}"
+      id: 89170509-13a6-436e-a1b5-a3d05de93b26
+      dataType: text
+      varType: submissionData
+    6539d8e9-9b5d-4573-9577-346a7283cbe3:
+      name: signature-938
+      id: 6539d8e9-9b5d-4573-9577-346a7283cbe3
+      dataType: text
+      varType: submissionData
+    d94c6947-158e-4294-9df9-0f63b2f65819:
+      name: inputDate
+      id: d94c6947-158e-4294-9df9-0f63b2f65819
+      dataType: date
+      varType: submissionData
+    66b70aa9-bcd6-4349-a2de-fb9299171938:
+      name: file-625
+      id: 66b70aa9-bcd6-4349-a2de-fb9299171938
+      dataType: text
+      varType: submissionData
+    632c3053-29ef-48fc-b322-53f522624479:
+      name: data.{{parent.index}}.skills.{{index}}.skill
+      id: 632c3053-29ef-48fc-b322-53f522624479
+      dataType: text
+      varType: submissionData
+    23a3e40b-1570-40a2-ad65-eea29b645e6c:
+      name: data.{{parent.parent.index}}.skills.{{parent.index}}.details.{{index}}.source
+      id: 23a3e40b-1570-40a2-ad65-eea29b645e6c
+      dataType: text
+      varType: submissionData
+    d8a94e06-dbe2-404f-83b1-54461e03a2ff:
+      name: data.{{index}}.name
+      id: d8a94e06-dbe2-404f-83b1-54461e03a2ff
+      dataType: text
+      varType: submissionData
+    c93f21f9-30b8-4d45-94dd-0425d02f73d7:
+      name: selectboxeselement-690
+      id: c93f21f9-30b8-4d45-94dd-0425d02f73d7
+      dataType: text
+      varType: submissionData
+    d11d9b67-60e7-46fb-bae7-dda3e07dc036:
+      name: textfield-767
+      id: d11d9b67-60e7-46fb-bae7-dda3e07dc036
+      dataType: text
+      varType: submissionData
+    a2e1ab1c-1be7-4229-ae53-243e5a3bfa96:
+      name: textarea-225
+      id: a2e1ab1c-1be7-4229-ae53-243e5a3bfa96
+      dataType: text
+      varType: submissionData
+    f43462f5-50fc-4f77-b10e-d672705e1212:
+      name: textfieldA
+      id: f43462f5-50fc-4f77-b10e-d672705e1212
+      dataType: text
+      varType: submissionData
+    050efa0d-7939-48a0-b6c9-aaefb4cbf228:
+      name: textfieldB
+      id: 050efa0d-7939-48a0-b6c9-aaefb4cbf228
+      dataType: text
+      varType: submissionData
+    0039d675-c006-4159-8988-cec8e6a8e720:
+      name: datetime-699
+      id: 0039d675-c006-4159-8988-cec8e6a8e720
+      dataType: date
+      varType: submissionData
+    d3444f62-0cf6-495f-9db4-3f47f7e0afe7:
+      name: datetime-984
+      id: d3444f62-0cf6-495f-9db4-3f47f7e0afe7
+      dataType: date
+      varType: submissionData
+customCssFile: https://dig-jfc-cnt-test101-assets.sapiens.com/assets/d46d1bc1-78cb-4160-9f4c-da65229e2f83
