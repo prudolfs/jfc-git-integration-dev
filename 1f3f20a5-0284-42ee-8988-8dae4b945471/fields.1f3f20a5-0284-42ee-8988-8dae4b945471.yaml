@@ -1,0 +1,79 @@
+- _id: 5a88029b-4d6e-48ad-977c-db788642510e
+  fieldId: a159b833-4a3e-403b-a035-59094fffa6a2
+  form: 1f3f20a5-0284-42ee-8988-8dae4b945471
+  components:
+    - 019cddae-02ee-4937-b23f-8e7e7b62e523
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  type: panel
+  isDialog: false
+  label: View-150
+  width: 730
+  createdAt: 2024-07-24T07:46:49.785Z
+- _id: 3f3459bf-582b-4377-b806-4be83d671a58
+  fieldId: 019cddae-02ee-4937-b23f-8e7e7b62e523
+  form: 1f3f20a5-0284-42ee-8988-8dae4b945471
+  components:
+    - 505f2fb4-68da-446c-8b54-3c57a337b61a
+  pageId: a159b833-4a3e-403b-a035-59094fffa6a2
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  key: section-661
+  type: section
+  parentId: a159b833-4a3e-403b-a035-59094fffa6a2
+  innerSection: false
+  createdAt: 2024-07-24T07:46:51.955Z
+- _id: 6333cbf6-c579-4755-826f-7e1f0d8978db
+  fieldId: 505f2fb4-68da-446c-8b54-3c57a337b61a
+  form: 1f3f20a5-0284-42ee-8988-8dae4b945471
+  components:
+    - b7854233-db13-417c-bb93-467b852b63bf
+  pageId: a159b833-4a3e-403b-a035-59094fffa6a2
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  type: column
+  key: column-671
+  parentId: 019cddae-02ee-4937-b23f-8e7e7b62e523
+  responsiveWidth:
+    xs: 12
+    sm: 12
+    md: 12
+  createdAt: 2024-07-24T07:46:51.956Z
+- _id: ce5db991-2b87-4e32-b44c-a8a0aed330a1
+  fieldId: b7854233-db13-417c-bb93-467b852b63bf
+  form: 1f3f20a5-0284-42ee-8988-8dae4b945471
+  components: []
+  pageId: a159b833-4a3e-403b-a035-59094fffa6a2
+  ranMigrations:
+    - 20220110200338-deleteDuplicates.js
+    - 20220111103009-mustacheExpressions.js
+    - 20220211105753-forms_publishing.js
+    - 20220214152546-forms_publishing.js
+    - 20220426111554-set_ran_migrations.js
+    - 20220506122750-add_imageAssetId_to_fields.js
+    - 20231218161113-content_and_html_show_error_to_error_label.js
+  key: textfield-257
+  type: textfield
+  parentId: 505f2fb4-68da-446c-8b54-3c57a337b61a
+  innerSection: true
+  inputType: text
+  requiredFieldIndicator: none
+  createdAt: 2024-07-24T07:46:55.023Z
