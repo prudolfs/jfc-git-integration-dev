@@ -32,7 +32,7 @@ ranMigrations:
 metaModels: []
 swaggerApi: []
 metaModelsFieldsData: []
-formShouldBeCommitted: true
+formShouldBeCommitted: false
 formShouldBePushed: true
 createdAt: 2024-07-24T07:46:48.693Z
 formGroupId: 3b2cd35b-0048-4ea9-8eab-b4e9d0e6ffef
