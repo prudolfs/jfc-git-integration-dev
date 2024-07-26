@@ -1,15 +1,7 @@
 - _id: 7c1131f9-37f3-4617-986c-0e8acfd0939f
-  actionId: 579ca97e-5eaf-4d3f-9fd9-736010765666
-  type: go-to-page
-  form: 1f3f20a5-0284-42ee-8988-8dae4b945471
-  position:
-    x: 299
-    y: 224
-  nextActions:
-    - type: output
-      label: Page Submit
-      value: ""
-      actionId: ""
+  page: a159b833-4a3e-403b-a035-59094fffa6a2
+  updatedAt: 2024-07-24T07:47:33.525Z
+  createdAt: 2024-07-24T07:47:29.673Z
   ranMigrations:
     - 20220110200338-deleteDuplicates.js
     - 20220111103009-mustacheExpressions.js
@@ -18,6 +10,14 @@
     - 20220426111554-set_ran_migrations.js
     - 20220506122750-add_imageAssetId_to_fields.js
     - 20231218161113-content_and_html_show_error_to_error_label.js
-  createdAt: 2024-07-24T07:47:29.673Z
-  updatedAt: 2024-07-24T07:47:33.525Z
-  page: a159b833-4a3e-403b-a035-59094fffa6a2
+  nextActions:
+    - type: output
+      label: Page Submit
+      value: ""
+      actionId: ""
+  position:
+    x: 299
+    y: 224
+  form: 1f3f20a5-0284-42ee-8988-8dae4b945471
+  type: go-to-page
+  actionId: 579ca97e-5eaf-4d3f-9fd9-736010765666
